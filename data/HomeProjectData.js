@@ -1,7 +1,7 @@
 export const projects = [
-    { title: 'Cabbage', time:'2019',id: 1 },
-    { title: 'Garlic', time:'2020',id: 2 },
-    { title: 'Apple', time:'2022',id: 3 },
+    { title: 'Cabbage', time:'2019',path:"/cabbage" ,id: 1 },
+    { title: 'Garlic', time:'2020',path:"/garlic" ,id: 2 },
+    { title: 'Apple', time:'2022',path:"/apple" ,id: 3 },
   ];
 
 

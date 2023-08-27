@@ -1,8 +1,8 @@
-
-
 import React from "react";
 import { projects } from "../data/HomeProjectData.js";
 import { TEXT_DATA } from "../data/HomeProjectData.js";
+import { NavLink } from "react-router-dom";
+
 
 
 
@@ -12,12 +12,11 @@ import { TEXT_DATA } from "../data/HomeProjectData.js";
   console.log(projects)
 
 function HomeCard (props){
- 
   const list = ProjectList();
-  // console.log(list)
-  // console.log(props.title)
-  console.log(props)
-
+  let pathString=props.path.toString()
+  // hover:outline-4
+  // hover:outline-offset-4
+  // hover:transition-all
     return (
         <div className="
                 bg-slate-800
@@ -29,9 +28,7 @@ function HomeCard (props){
                 cursor-pointer
                 outline
                 outline-0
-                hover:outline-4
-                hover:outline-offset-4
-                hover:transition-all
+           
                 ">
             <h1 className="
                   text-2xl
@@ -46,7 +43,8 @@ function HomeCard (props){
             opacity-80">{TEXT_DATA}</p>
 
             <img />
-              <button className="
+            <NavLink to={props.path}>
+              <div className="
                         bg-slate-100
                         border-slate-800
                         text-slate-800
@@ -54,11 +52,16 @@ function HomeCard (props){
                         p-2
                         mt-2
                         transition-transform
-                        group-hover:translate-x-1 motion-reduce:transform-none" >
-              Learn more{' '} 
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                        group-hover:translate-x-1 motion-reduce:transform-none
+                        hover:outline-4 hover:outline-offset-4 hover:transition-all" >
+
+              {/* <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none hover:outline-4 hover:outline-offset-4 hover:transition-all"> */}
+            
+                Link
               
-            </span></button>
+            {/* </span> */}
+            </div>
+            </NavLink>
               
         </div>
         
@@ -71,14 +74,12 @@ function HomeCard (props){
    
       const listItems = projects.map(projects =>
        
-      <HomeCard title={projects.title} time={projects.time} key={projects.key}/>
-  
+      <HomeCard title={projects.title} time={projects.time} key={projects.key} path={projects.path}/>
       );
-         
       return (
-         listItems
+        listItems
       );
     }
- 
 
- export {ProjectList}
+
+export {ProjectList}
