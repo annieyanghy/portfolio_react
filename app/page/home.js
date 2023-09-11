@@ -1,6 +1,6 @@
 "use client"
 
-import { ProjectList } from "../../components/card"
+import { ProjectList } from "../../components/homeCard"
 import { Navigation } from "../../components/topnav"
 import { Footer } from "../../components/footer"
 import React from "react";
@@ -8,9 +8,10 @@ import React from "react";
 
 
 
+
 export default function Home() {
   return (
-    <main className=" w-full max-w-5xl">
+    <main className="w-full max-w-5xl">
      
       <div className="flex flex-col items-center justify-content my-5 ">
         <div> 

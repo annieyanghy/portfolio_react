@@ -9,6 +9,7 @@ module.exports = {
     fontFamily: {
       sans: ['Roboto', 'sans-serif'],
       serif: ['Cambria', 'serif'],
+      mono: ['SFMono-Regular', 'monospace']
     },
     extend: {
       backgroundImage: {

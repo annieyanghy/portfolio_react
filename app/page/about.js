@@ -1,5 +1,5 @@
 import React from "react";
-import { ProjectList } from "../../components/card"
+import { ProjectList } from "../../components/homeCard"
 import { Navigation } from "../../components/topnav"
 import { Footer } from "../../components/footer"
 

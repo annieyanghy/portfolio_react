@@ -5,18 +5,10 @@ import { NavLink } from "react-router-dom";
 
 
 
-
-
- var listItems;
-
-  console.log(projects)
+console.log(projects)
 
 function HomeCard (props){
-  const list = ProjectList();
-  let pathString=props.path.toString()
-  // hover:outline-4
-  // hover:outline-offset-4
-  // hover:transition-all
+  
     return (
         <div className="
                 bg-slate-800
@@ -28,7 +20,7 @@ function HomeCard (props){
                 cursor-pointer
                 outline
                 outline-0
-           
+                hover:outline-4 hover:outline-offset-4 hover:transition-all
                 ">
             <h1 className="
                   text-2xl
@@ -53,7 +45,7 @@ function HomeCard (props){
                         mt-2
                         transition-transform
                         group-hover:translate-x-1 motion-reduce:transform-none
-                        hover:outline-4 hover:outline-offset-4 hover:transition-all" >
+                        " >
 
               {/* <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none hover:outline-4 hover:outline-offset-4 hover:transition-all"> */}
             
@@ -69,7 +61,7 @@ function HomeCard (props){
     
   }
 
-
+  var listItems;
   function ProjectList() {
    
       const listItems = projects.map(projects =>
