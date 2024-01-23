@@ -7,6 +7,7 @@ export default function MainLeft(props) {
     return (
         <div className="flex 
                         flex-row
+                        w-full
                         bg-slate-800
                         p-10
                         m-5
@@ -14,6 +15,8 @@ export default function MainLeft(props) {
                         justify-between
                         ">
             <div className="
+                    flex
+                    flex-col
                     w-6/12
                     pr-5
                     font-sans
@@ -30,14 +33,14 @@ export default function MainLeft(props) {
                     </p>
 
                     <h1 className="
-                        text-5xl
+                        text-4xl
                         font-semibold
                         mb-4">
                         {props.title}
                     </h1>
                     <p className="
                         text-base
-                        opacity-80">
+                        opacity-95">
                         {props.description}
                     </p>
             </div>

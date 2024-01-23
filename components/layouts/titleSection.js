@@ -5,14 +5,13 @@ export default function TitleSection(props) {
     
     return (
         <div className="flex 
-                        
                         p-10
                         m-5
                         justify-center
                         ">
             <div className="
                     flex-col
-                    w-fit
+                    w-8/12
                     font-sans
                     text-zinc-50
                     text-center

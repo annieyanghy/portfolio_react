@@ -11,6 +11,7 @@ export default function Col3(props) {
                 p-10
                 m-5
                 w-full
+                
                 font-sans
                 rounded-2xl
                 text-zinc-50
@@ -35,7 +36,8 @@ export default function Col3(props) {
                 </h1>
                 <p className="
                     text-sm
-                    opacity-80">
+                    opacity-80
+                    h-12">
                     {props.description}
                 </p>
 

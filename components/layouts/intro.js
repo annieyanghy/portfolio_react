@@ -1,5 +1,7 @@
 import React from "react";
 
+
+
 export default function Intro(props) {
     // image is at left
 
@@ -10,15 +12,26 @@ export default function Intro(props) {
                         w-screen
                         bg-slate-800
                         pb-10
-                        mb-10
+                        mb-0
                         justify-between
 
                         "
-            style={{ backgroundImage: "url('https://legacy.reactjs.org/logo-og.png')" }}
+            style={{ backgroundImage: props.imgPath,
+                    backgroundRepeat: 'no-repeat',
+                    position:'relative',
+                    display:'block',
+                    width:'1500px',
+                    height: props.height,
+                    backgroundPosition: '10% 10%',
+                    backgroundSize: 'cover',
+                    }}
+            alt={props.altText}
         >
-            <div className="w-full brightness-100">
+
+            {/* <div className="w-full brightness-100">
                 <img src={props.imgPath} alt={props.altText} />
-            </div>
+            </div> */}
+
             <div
                 className="
                     flex 

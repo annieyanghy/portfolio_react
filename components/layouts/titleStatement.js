@@ -10,6 +10,7 @@ export default function TitleStatement(props) {
                         pb-1
                         m-5
                         mb-2
+                        mt-10
                         ">
             <div className="
                     w-full
