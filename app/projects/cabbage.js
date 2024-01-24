@@ -8,7 +8,7 @@ import MainRight from "@/components/layouts/main_right";
 import TitleSection from "@/components/layouts/titleSection";
 import TitleStatement from "@/components/layouts/titleStatement";
 import Intro from "@/components/layouts/intro";
-import { Parallax, ParallaxBanner  } from 'react-scroll-parallax';
+import { Parallax, ParallaxBanner, ParallaxBannerLayer  } from 'react-scroll-parallax';
 
 
 export default function Cabbage() {
@@ -18,34 +18,24 @@ export default function Cabbage() {
       <div className="flex flex-col items-center justify-content mb-20">
         
           <ParallaxBanner 
-           style={{ 
-                    backgroundRepeat: 'no-repeat',
-                    backgroundPosition: '-5% 50%',
-                    }}
-            className="aspect-[2/1]  block  max-w-8xl max-h-min"
-              layers={[
-                      { image: '/cabbage/Focus_hero_L.png', speed: -10, }, 
-                      ]}
-             
-          >
-              {/* <div className="absolute inset-0 flex items-center justify-center">
-                <h1 className="text-8xl text-white font-thin">Hello World!</h1>
-              </div> */}
-            
+              style={{ aspectRatio: '2 / 1', }}
+              // className="aspect-[2/1] bg-center  bg-no-repeat max-w-8xl max-h-min"
+              >
+            <ParallaxBannerLayer image='/cabbage/Focus_hero_L.png' speed={-10}
+              style={{  backgroundPosition:'50% 5vh' }}
+            />
           </ParallaxBanner>
-          <Intro title="I'm cabbage"  
-              time="2020" role="solo product designer" type="passion project expanded from a class"
-              height="20%"
-              />
-    
+          <Intro title="Focus Calendar"  
+                time="2020" role="solo product designer" 
+                description="Using behavioral economics to nudge people to to get things done"
+                type="passion project"
+                height="100%"/>
+                {/* <Intro 
+                imgPath="url(/cabbage/Focus_hero_L.png)"
+                height="500px"
+                /> */}
 
-      
-            {/* <Intro 
-            imgPath="url(/cabbage/Focus_hero_L.png)"
-            height="500px"
-            /> */}
-
-        <div className="relative ">
+        <div className="relative mt-10">
           {/* problem */}
           <Cabbage_problem_1_merge />
           <div className="relative  flex-row mx-auto md:flex items-center justify-between">
@@ -54,7 +44,7 @@ export default function Cabbage() {
         </div>
 
 
-        <div className="relative  items-center justify-between">
+        <div className="relative mt-10 items-center justify-between">
           {/* solution */}
           <Cabbage_solution_1_merge />
 

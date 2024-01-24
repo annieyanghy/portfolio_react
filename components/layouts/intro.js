@@ -10,17 +10,15 @@ export default function Intro(props) {
             className="flex 
                         flex-col
                         w-screen
-                        bg-slate-800
-                        pb-10
-                        mb-0
+                        py-10
                         justify-between
-
+                        bg-slate-800
                         "
             style={{ backgroundImage: props.imgPath,
                     backgroundRepeat: 'no-repeat',
                     position:'relative',
                     display:'block',
-                    width:'1500px',
+                    width:props.width,
                     height: props.height,
                     backgroundPosition: '10% 10%',
                     backgroundSize: 'cover',
@@ -39,7 +37,8 @@ export default function Intro(props) {
                     font-sans
                     text-zinc-50
                     text-left
-                    justify-center"
+                    justify-center
+                    items-center"
             >
                 <p
                     className="
@@ -54,30 +53,43 @@ export default function Intro(props) {
 
                 <h1
                     className="
-                        text-5xl
-                        font-semibold
+                        text-6xl
+                        font-bold
                         text-center
-                        mb-4"
+                        mb-5"
                 >
                     {props.title}
                 </h1>
+                <h3
+                    className="
+                        text-xl
+                        text-center
+                        mb-12"
+                >
+                    {props.description}
+                </h3>
             </div>
             <div className="
                     flex 
                     flex-row
                     justify-center
-                    space-x-4">
+                    space-x-10
+                    
+                    ">
                 <p
                     className="
                         text-base
-                        opacity-80"
+                        opacity-80
+                        "
                 >
                     {props.time}
                 </p>
                 <p
                     className="
                         text-base
-                        opacity-80"
+                        opacity-80
+                        
+                        "
                 >
                     {props.role}
                 </p>
@@ -85,7 +97,9 @@ export default function Intro(props) {
                 <p
                     className="
                         text-base
-                        opacity-80"
+                        opacity-80
+                       
+                        "
                 >
                     {props.type}
                 </p>
