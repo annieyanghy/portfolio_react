@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function Col_3(props) {
+export default function Col_2(props) {
     return (
 
         <div 
             className="
-                        relative flex flex-col max-w-5xl mx-auto 
+                        flex flex-col relative w-full max-w-5xl mx-auto 
                         my-16
                         md:flex items-center justify-between"
         >
@@ -22,9 +22,10 @@ export default function Col_3(props) {
             </h4>
             <div
                 className="
-                        relative flex flex-row max-w-5xl mx-auto 
+                        relative flex flex-row w-full max-w-5xl mx-auto 
                         md:flex items-center justify-between"
             >
+
                 {props.component}
             </div>
         </div>

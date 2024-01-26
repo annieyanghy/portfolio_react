@@ -8,8 +8,6 @@ export default function TitleStatement(props) {
                         flex-row
                         p-10
                         pb-1
-                        m-5
-                        mb-2
                         mt-10
                         ">
             <div className="
@@ -18,12 +16,12 @@ export default function TitleStatement(props) {
                     text-zinc-50
                     text-center
                     justify-center">
-                    <h1 className="
+                    <h3 className="
                         text-3xl
                         font-normal
-                        mb-4">
+                        ">
                         {props.title}
-                    </h1>
+                    </h3>
                     <p className="
                         text-base
                         opacity-80">

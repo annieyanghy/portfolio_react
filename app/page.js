@@ -7,7 +7,7 @@ import React from "react";
 import About from "./page/about";
 import Home from "./page/home"
 import Garlic from "./projects/garlic";
-import Cabbage from "./projects/cabbage";
+import Focus from "./projects/focus";
 import Apple from "./projects/apple";
 
 import { BrowserRouter , Routes,  Route} from "react-router-dom";
@@ -32,7 +32,7 @@ export default function Index() {
               <Route path="/about" element={<About />} />
 
               <Route path="/garlic" element={<Garlic />} />
-              <Route path="/cabbage" element={<Cabbage />} />
+              <Route path="/focus" element={<Focus />} />
               <Route path="/apple" element={<Apple />} />
                   
               {/* If any route mismatches the upper 

@@ -6,20 +6,25 @@ export default function TitleSection(props) {
     return (
         <div className="flex 
                         p-10
-                        m-5
+                        my-5
+                        mx-auto
+                        max-w-5xl
                         justify-center
                         font-sans
+                        
                         ">
             <div className="
                     flex
                     flex-col
                     w-8/12
+                    mx-auto
                     font-sans
                     text-zinc-50
                     text-center
                     justify-center
-                    justify-items-center">
-                    <h1 className="
+                    
+                    ">
+                    <h2 className="
                         text-3xl
                         font-bold
                         rounded-full
@@ -29,7 +34,7 @@ export default function TitleSection(props) {
                         p-6
                         mb-4">
                         {props.title}
-                    </h1>
+                    </h2>
                     <p className="
                         text-lg
                         opacity-80">
