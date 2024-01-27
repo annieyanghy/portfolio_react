@@ -27,4 +27,9 @@ body {
     
 }
 
+th {
+  text-align:left;
+  /* padding-right:2rem; */
+}
+
 

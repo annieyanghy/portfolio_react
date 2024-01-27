@@ -1,4 +1,6 @@
 import React from "react";
+import '../globals.css';
+
 import {
   Cabbage_problem_1_merge,
   Cabbage_problem_2_merge,
@@ -7,6 +9,7 @@ import {
   Cabbage_research_1_merge,
   Cabbage_research_interview_0_merge, Cabbage_research_interview_1_merge,  Cabbage_research_interview_2_merge,
   Cabbage_research_compAnalysis_0_merge,
+  Cabbage_research_keyPainPoints_merge,
 } from "../../data/dataMerge/focusDataMerge";
 import MainLeft from "@/components/blocks/main_left";
 import MainRight from "@/components/blocks/main_right";
@@ -15,11 +18,13 @@ import TitleStatement from "@/components/blocks/titleStatement";
 import Intro from "@/components/blocks/intro";
 import Col_3 from "@/components/layouts/3Col";
 import Col_2 from "@/components/layouts/2Col";
+import Table from "@/components/blocks/table/tableBody";
 import {
   Parallax,
   ParallaxBanner,
   ParallaxBannerLayer,
 } from "react-scroll-parallax";
+import { cabbage_research_keyPainPoints } from "@/data/focusRawData";
 
 export default function Focus() {
   return (
@@ -69,7 +74,7 @@ export default function Focus() {
 
 
         {/* research */}
-        <div className="flex flex-col relative mt-10 w-full items-center justify-center  bg-indigo-500">
+        <div className="flex flex-col relative mt-10 pt-10 w-full items-center justify-center  bg-indigo-500">
 
             <Cabbage_research_1_merge />
 
@@ -93,7 +98,9 @@ export default function Focus() {
             <div className="relative my-10 px-14 w-max justify-center rounded-3xl bg-fuchsia-700">
 
                 <TitleStatement title="Key pain points" />
-                <Col_2 title="" component={Cabbage_research_compAnalysis_0_merge()} titleBgColor="" />
+                <Table >{Cabbage_research_keyPainPoints_merge()}</Table>
+                
+
                 
             </div>
         </div>

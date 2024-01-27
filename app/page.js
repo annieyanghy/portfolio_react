@@ -1,5 +1,5 @@
 "use client"
-
+import './globals.css'
 import { Navigation } from "../components/topnav"
 import { Footer } from "../components/footer"
 import { Header} from "../components/header"

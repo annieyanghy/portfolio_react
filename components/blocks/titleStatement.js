@@ -16,6 +16,12 @@ export default function TitleStatement(props) {
                     text-zinc-50
                     text-center
                     justify-center">
+                    <p className="
+                        text-sm
+                        font-mono
+                        opacity-80">
+                        {props.caption}
+                    </p>
                     <h3 className="
                         text-3xl
                         font-normal
@@ -24,7 +30,7 @@ export default function TitleStatement(props) {
                     </h3>
                     <p className="
                         text-base
-                        opacity-80">
+                        opacity-90">
                         {props.description}
                     </p>
             </div>

@@ -4,12 +4,15 @@ import {
   cabbage_research_1, 
   cabbage_research_interview_0, cabbage_research_interview_1,cabbage_research_interview_2,
   cabbage_research_compAnalysis_0,
+  cabbage_research_keyPainPoints
   
   } from "../focusRawData";
 import Insight_col from "@/components/blocks/Insight_col";
 import TitleSection from "@/components/blocks/titleSection";
 import MainLeft from "@/components/blocks/main_left";
 import MainRight from "@/components/blocks/main_right";
+import TableRow from "@/components/blocks/table/tableRow";
+import Table from "@/components/blocks/table/tableBody";
 
 
 // cabbage===focus project //
@@ -22,7 +25,7 @@ import MainRight from "@/components/blocks/main_right";
 function Cabbage_problem_1_merge() {
 
   const cabbageProblem = cabbage_problem_1.map(i =>
-    <TitleSection title={i.title} description={i.description}/>
+    <TitleSection caption={i.caption} title={i.title} description={i.description} />
   );
   return (
     cabbageProblem
@@ -46,7 +49,7 @@ export {Cabbage_problem_2_merge}
 function Cabbage_solution_1_merge() {
 
   const cabbageSolution = cabbage_solution_1.map(i =>
-    <TitleSection title={i.title} description={i.description}/>
+    <TitleSection caption={i.caption} title={i.title} description={i.description}/>
   );
   return (
     cabbageSolution
@@ -93,7 +96,7 @@ export {Cabbage_solution_2_merge}
 function Cabbage_research_1_merge() {
 
   const cabbageResearch = cabbage_research_1.map(i =>
-    <TitleSection title={i.title} description={i.description}/>
+    <TitleSection caption={i.caption} title={i.title} description={i.description}/>
   );
   return (
     cabbageResearch
@@ -156,3 +159,16 @@ function Cabbage_research_compAnalysis_0_merge() {
   );
 }
 export {Cabbage_research_compAnalysis_0_merge}
+
+
+function Cabbage_research_keyPainPoints_merge() {
+
+  const cabbagePP = cabbage_research_keyPainPoints.map(i =>
+  <TableRow th={i.th} td={i.td} mid={i.mid}/>
+  );
+  return (
+  
+  cabbagePP
+  );
+}
+export {Cabbage_research_keyPainPoints_merge}

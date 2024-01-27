@@ -5,8 +5,7 @@ export default function TitleSection(props) {
     
     return (
         <div className="flex 
-                        p-10
-                        my-5
+                        my-8
                         mx-auto
                         max-w-5xl
                         justify-center
@@ -16,28 +15,35 @@ export default function TitleSection(props) {
             <div className="
                     flex
                     flex-col
-                    w-8/12
+                    w-9/12
                     mx-auto
                     font-sans
                     text-zinc-50
                     text-center
                     justify-center
-                    
+                    items-center
+            
                     ">
-                    <h2 className="
-                        text-3xl
-                        font-bold
+                    <p className="
+                        text-base
+                        font-mono
+                        font-semibold
+                        p-4
                         rounded-full
                         bg-blue-950
-                        w-min
-                        m-auto
-                        p-6
-                        mb-4">
+                        opacity-80">
+                        {props.caption}
+                    </p>
+                    <h2 className="
+                        text-3xl
+                        font-semibold
+                        p-2
+                        my-5">
                         {props.title}
                     </h2>
                     <p className="
                         text-lg
-                        opacity-80">
+                        opacity-90">
                         {props.description}
                     </p>
             </div>

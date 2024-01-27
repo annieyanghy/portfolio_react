@@ -8,7 +8,7 @@
 // --problem-- //
 
 export const cabbage_problem_1 = [
-  { title:'Problem', description:'People can’t accomplish important tasks they set their mind to do in time because they are constantly distracted.' },
+  { caption:'Problem', title:'People can’t accomplish important tasks they set their mind to do in time because they are constantly distracted.' },
 ];
 
 
@@ -22,7 +22,11 @@ export const cabbage_problem_2 = [
 // --solution-- //
 
 export const cabbage_solution_1 = [
-  { title:'Solution', description:'A goal setting-based app that combines calendar and focus timer features to nudge people to get things done based on behavior economics.' },
+  { caption:'Solution', 
+    title:'A productivity app powered by behavioral science: using goal-setting theories to help people get things done',
+    description:'like task breaker and calendar with focus timer. ' 
+
+    },
 ];
 
 export const cabbage_solution_2 = [
@@ -40,7 +44,7 @@ export const cabbage_solution_2 = [
 // --research-- //
 
 export const cabbage_research_1 = [
-  { title:'Research', description:'For foundational research, I conducted a round of user interviews with 4 participants and competitive analysis.' },
+  { caption:'Research', title:'Foundational research: 1 round of user interviews with four participants and 1 competitive analysis.' },
 ];
 
 
@@ -67,6 +71,16 @@ export const cabbage_research_interview_1 = [
   export const cabbage_research_compAnalysis_0 = [
     { icon:'', caption:'4 competitors', title: '', description:'focus apps with various product features', id: 1 },
     { icon:'', caption:'1 opportunity', title: '', description:'none integrates with digital calendar', id: 2 },
+  ];
+
+
+         // --research insights | key pain points -- //
+  export const cabbage_research_keyPainPoints = [
+    { th:'Plan & schedule', mid:'👉', td:'When tasks are overwhelming, participants feel paralyzed to even start planning'},
+    { th:'Happen soon', mid:'👉', td:'Participants’ emotion focus state can fluctuate drastically right before a scheduled task happens'},
+    { th:'Happening', mid:'👉', td:'If it’s not interesting to participants, they are easily distracted by external factors'},
+
+
   ];
 
 
