@@ -3,7 +3,7 @@ import {
   cabbage_solution_1,cabbage_solution_2,
   cabbage_research_1, 
   cabbage_research_interview_0, cabbage_research_interview_1,cabbage_research_interview_2,
-  cabbage_research_compAnalysis_0,
+  cabbage_research_compAnalysis_0, cabbage_research_compAnalysis_1,
   cabbage_research_keyPainPoints
   
   } from "../focusRawData";
@@ -161,14 +161,34 @@ function Cabbage_research_compAnalysis_0_merge() {
 export {Cabbage_research_compAnalysis_0_merge}
 
 
+function Cabbage_research_compAnalysis_1_merge() {
+
+  const cabbageResearch = cabbage_research_compAnalysis_1.map((i, index) =>
+  <TableRow th={i.th} mid={i.mid} index={index}
+            td1={i.td1} td2={i.td2} td3={i.td3} td4={i.td4}
+            
+         
+  />
+  );
+  return (  
+    cabbageResearch
+  );
+}
+export {Cabbage_research_compAnalysis_1_merge}
+
+
 function Cabbage_research_keyPainPoints_merge() {
 
-  const cabbagePP = cabbage_research_keyPainPoints.map(i =>
-  <TableRow th={i.th} td={i.td} mid={i.mid}/>
+  const cabbagePP = cabbage_research_keyPainPoints.map((i, index) =>
+  <TableRow th={i.th} mid={i.mid} index={index}
+            td1={i.td1} td2={i.td2} td3={i.td3} td4={i.td4}
+          
+  />
   );
-  return (
-  
-  cabbagePP
+  return (  
+    cabbagePP
   );
 }
 export {Cabbage_research_keyPainPoints_merge}
+
+

@@ -6,9 +6,9 @@ export default function TitleStatement(props) {
     return (
         <div className="flex 
                         flex-row
-                        p-10
+                        p-8
                         pb-1
-                        mt-10
+                        my-5
                         ">
             <div className="
                     w-full

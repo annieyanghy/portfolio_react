@@ -80,7 +80,7 @@ function ProjectList() {
     <HomeCard
       title={projects.title}
       time={projects.time}
-      key={projects.key}
+      key={projects}
       path={projects.path}
       description={projects.description}
       link={projects.link}

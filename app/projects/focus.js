@@ -8,7 +8,7 @@ import {
   Cabbage_solution_2_merge,
   Cabbage_research_1_merge,
   Cabbage_research_interview_0_merge, Cabbage_research_interview_1_merge,  Cabbage_research_interview_2_merge,
-  Cabbage_research_compAnalysis_0_merge,
+  Cabbage_research_compAnalysis_0_merge, Cabbage_research_compAnalysis_1_merge,
   Cabbage_research_keyPainPoints_merge,
 } from "../../data/dataMerge/focusDataMerge";
 import MainLeft from "@/components/blocks/main_left";
@@ -25,6 +25,8 @@ import {
   ParallaxBannerLayer,
 } from "react-scroll-parallax";
 import { cabbage_research_keyPainPoints } from "@/data/focusRawData";
+console.log(cabbage_research_keyPainPoints)
+
 
 export default function Focus() {
   return (
@@ -78,7 +80,7 @@ export default function Focus() {
 
             <Cabbage_research_1_merge />
 
-            <div className="relative my-10 px-14 w-max  justify-center rounded-3xl bg-indigo-700">
+            <div className="relative my-10 py-8 px-14 w-max justify-center rounded-3xl bg-indigo-700">
 
                 <TitleStatement title="Foundational user interview" />
                 <Col_2 title="" component={Cabbage_research_interview_0_merge()} titleBgColor="" />
@@ -88,17 +90,19 @@ export default function Focus() {
             
             </div>
             
-            <div className="relative my-10 px-14 w-max justify-center rounded-3xl bg-fuchsia-700">
+            <div className="relative my-10 py-8 px-14 w-max justify-center rounded-3xl bg-indigo-900">
 
                 <TitleStatement title="Competitive analysis" />
                 <Col_2 title="" component={Cabbage_research_compAnalysis_0_merge()} titleBgColor="" />
+                <Table id="hii">{Cabbage_research_compAnalysis_1_merge()}</Table>
                 
             </div>
 
-            <div className="relative my-10 px-14 w-max justify-center rounded-3xl bg-fuchsia-700">
+            <div className="relative my-10 py-8 px-14 w-max justify-center rounded-3xl bg-fuchsia-700">
 
                 <TitleStatement title="Key pain points" />
                 <Table >{Cabbage_research_keyPainPoints_merge()}</Table>
+                
                 
 
                 
@@ -108,6 +112,7 @@ export default function Focus() {
 
         <div className="flex flex-col relative mt-10 w-full items-center justify-center  ">
             {/* Ideate */}
+            
             
         </div>
 

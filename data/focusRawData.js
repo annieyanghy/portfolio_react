@@ -74,14 +74,74 @@ export const cabbage_research_interview_1 = [
   ];
 
 
+        // --research | competitive analysis chart -- //
+   export const cabbage_research_compAnalysis_1 = [
+    { th:'Timer', 
+      td1:'✅',
+      td2:'✅',
+      td3:'✅',
+      td4:'✅',
+    
+    },
+    { th:'To-do list', 
+      td1:'❌',
+      td2:'✅',
+      td3:'❌',
+      td4:'❌',
+    
+    },
+    { th:'Task breaker', 
+      td1:'✅',
+      td2:'❌',
+      td3:'❌',
+      td4:'❌',
+    
+    },
+    { th:'Gamification', 
+      td1:'❌',
+      td2:'❌',
+      td3:'❌',
+      td4:'✅',
+    
+    },
+    { th:'Website blocker', 
+      td1:'✅',
+      td2:'❌',
+      td3:'❌',
+      td4:'❌',
+    
+    },
+    { th:'Live group focus session', 
+      td1:'❌',
+      td2:'❌',
+      td3:'✅',
+      td4:'❌',
+    
+    },
+    { th:'Community', 
+      td1:'❌',
+      td2:'❌',
+      td3:'✅',
+      td4:'❌',
+    
+    },
+    { th:'Calendar integration', 
+      td1:'❌',
+      td2:'❌',
+      td3:'❌',
+      td4:'❌',
+    
+    },
+  ];
+
+
          // --research insights | key pain points -- //
   export const cabbage_research_keyPainPoints = [
-    { th:'Plan & schedule', mid:'👉', td:'When tasks are overwhelming, participants feel paralyzed to even start planning'},
-    { th:'Happen soon', mid:'👉', td:'Participants’ emotion focus state can fluctuate drastically right before a scheduled task happens'},
-    { th:'Happening', mid:'👉', td:'If it’s not interesting to participants, they are easily distracted by external factors'},
-
-
+    { th:'1. Plan & schedule', mid:'😰', td1:'When tasks are overwhelming, participants feel paralyzed to even start planning'},
+    { th:'2. Happen soon', mid:'📈', td1:'Participants’ emotion and focus state fluctuate drastically right before a scheduled task happens'},
+    { th:'3. Happening', mid:'🥱', td1:'If it’s not interesting to participants, they are easily distracted by external factors'},
   ];
+
 
 
 // export const cabbage_data_research_1 = [
