@@ -76,6 +76,7 @@ export const cabbage_research_interview_1 = [
 
         // --research | competitive analysis chart -- //
    export const cabbage_research_compAnalysis_1 = [
+    
     { th:'Timer', 
       td1:'✅',
       td2:'✅',
@@ -111,7 +112,7 @@ export const cabbage_research_interview_1 = [
       td4:'❌',
     
     },
-    { th:'Live group focus session', 
+    { th:'Live group session', 
       td1:'❌',
       td2:'❌',
       td3:'✅',
@@ -137,9 +138,9 @@ export const cabbage_research_interview_1 = [
 
          // --research insights | key pain points -- //
   export const cabbage_research_keyPainPoints = [
-    { th:'1. Plan & schedule', mid:'😰', td1:'When tasks are overwhelming, participants feel paralyzed to even start planning'},
-    { th:'2. Happen soon', mid:'📈', td1:'Participants’ emotion and focus state fluctuate drastically right before a scheduled task happens'},
-    { th:'3. Happening', mid:'🥱', td1:'If it’s not interesting to participants, they are easily distracted by external factors'},
+    { th:'1. Plan & schedule', mid:'😰', td:'When tasks are overwhelming, participants feel paralyzed to even start planning'},
+    { th:'2. Happen soon', mid:'📈', td:'Participants’ emotion and focus state fluctuate drastically right before a scheduled task happens'},
+    { th:'3. Happening', mid:'🥱', td:'If it’s not interesting to participants, they are easily distracted by external factors'},
   ];
 
 

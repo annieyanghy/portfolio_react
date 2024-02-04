@@ -1,5 +1,6 @@
 import React from "react";
 import '../globals.css';
+import styles from './styles.module.css';
 
 import {
   Cabbage_problem_1_merge,
@@ -80,7 +81,7 @@ export default function Focus() {
 
             <Cabbage_research_1_merge />
 
-            <div className="relative my-10 py-8 px-14 w-max justify-center rounded-3xl bg-indigo-700">
+            <div className="relative my-10 py-8 px-14  w-8/12 justify-center rounded-3xl bg-indigo-700">
 
                 <TitleStatement title="Foundational user interview" />
                 <Col_2 title="" component={Cabbage_research_interview_0_merge()} titleBgColor="" />
@@ -90,18 +91,26 @@ export default function Focus() {
             
             </div>
             
-            <div className="relative my-10 py-8 px-14 w-max justify-center rounded-3xl bg-indigo-900">
+            <div className="relative my-10 py-8 px-14 w-8/12 justify-center rounded-3xl bg-indigo-900">
 
                 <TitleStatement title="Competitive analysis" />
                 <Col_2 title="" component={Cabbage_research_compAnalysis_0_merge()} titleBgColor="" />
-                <Table id="hii">{Cabbage_research_compAnalysis_1_merge()}</Table>
+
+                <tr className=" w-max " >
+                  <th className=" w-3/12 text-zinc-50 px-10 "></th>
+                  <th className=" text-zinc-50 px-14git text-xl align-middle">Serene</th>
+                  <th className=" text-zinc-50 px-14git text-xl align-middle">Focus To-do</th>
+                  <th className=" text-zinc-50 px-14git text-xl align-middle">Flipd</th>
+                  <th className=" text-zinc-50 px-14git text-xl align-middle">Forest</th>
+                </tr>
+                <Table >{Cabbage_research_compAnalysis_1_merge()}</Table>
                 
             </div>
 
-            <div className="relative my-10 py-8 px-14 w-max justify-center rounded-3xl bg-fuchsia-700">
+            <div className="relative my-10 py-8 px-14  w-8/12 justify-center rounded-3xl bg-fuchsia-700">
 
                 <TitleStatement title="Key pain points" />
-                <Table >{Cabbage_research_keyPainPoints_merge()}</Table>
+                <Table>{Cabbage_research_keyPainPoints_merge()}</Table>
                 
                 
 

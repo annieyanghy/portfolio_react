@@ -27,15 +27,14 @@ body {
     
 }
 
-#hii {
-  font-size:44px
-}
 
 .pointer {
   position: relative;
   clip-path: polygon(85% 0%, 95% 50%, 85% 100%, 0% 100%, 10% 50%, 0% 0%);
   
 }
+
+
 
 
 

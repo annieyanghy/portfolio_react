@@ -12,7 +12,9 @@ import TitleSection from "@/components/blocks/titleSection";
 import MainLeft from "@/components/blocks/main_left";
 import MainRight from "@/components/blocks/main_right";
 import TableRow from "@/components/blocks/table/tableRow";
-import Table from "@/components/blocks/table/tableBody";
+
+import TableData from "@/components/blocks/table/tableData";
+// import Table from "@/components/blocks/table/tableBody";
 
 
 // cabbage===focus project //
@@ -161,6 +163,21 @@ function Cabbage_research_compAnalysis_0_merge() {
 export {Cabbage_research_compAnalysis_0_merge}
 
 
+// function Cabbage_research_compAnalysis_1_merge() {
+
+//   const cabbageResearch = cabbage_research_compAnalysis_1.map((i, index) =>
+//   <TableRow th={i.th} mid={i.mid} index={index}
+//             td1={i.td1} td2={i.td2} td3={i.td3} td4={i.td4}
+            
+         
+//   />
+//   );
+//   return (  
+//     cabbageResearch
+//   );
+// }
+// export {Cabbage_research_compAnalysis_1_merge}
+
 function Cabbage_research_compAnalysis_1_merge() {
 
   const cabbageResearch = cabbage_research_compAnalysis_1.map((i, index) =>
@@ -180,8 +197,7 @@ export {Cabbage_research_compAnalysis_1_merge}
 function Cabbage_research_keyPainPoints_merge() {
 
   const cabbagePP = cabbage_research_keyPainPoints.map((i, index) =>
-  <TableRow th={i.th} mid={i.mid} index={index}
-            td1={i.td1} td2={i.td2} td3={i.td3} td4={i.td4}
+  <TableData th={i.th} mid={i.mid} td={i.td}  index={index}
           
   />
   );
