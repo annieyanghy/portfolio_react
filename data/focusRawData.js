@@ -31,13 +31,17 @@ export const cabbage_solution_1 = [
 
 export const cabbage_solution_2 = [
   { caption:'1', title: 'Turn calendar events into a focus timer to easily stick to the schedule', 
-    description:'Integrate existing goals and resources: Google Calendar or Microsoft Outlook. Making stick-to-a-goal easier',imgPath:'/cabbage/apple.png' },
+    description:'Integrate existing goals and resources: Google Calendar or Microsoft Outlook. Making stick-to-a-goal easier',
+    vidPath:'/cabbage/Walkthrough/1_Turn calendar to focus event_2021_V3.mov' },
   { caption:'2', title: 'Break difficult tasks into smaller tasks', 
-    description:'Small wins and short-term goals are more attainable than bigger goals.', imgPath:'/cabbage/apple.png'},
+    description:'Small wins and short-term goals are more attainable than bigger goals.', 
+    vidPath:'/cabbage/Walkthrough/2_Task breaker_2021_V3.mov'},
   { caption:'3', title: 'Create a calendar event with focus timer', 
-    description:'Making the better choice more cognitively available by setting focus timer as a default.',imgPath:'/cabbage/apple.png' },
+    description:'Making the better choice more cognitively available by setting focus timer as a default.',
+    vidPath:'/cabbage/Walkthrough/3_Create event_2021_V3.mov' },
     { caption:'4', title: 'Start a focus timer any time and block the phone', 
-    description:'Decrease the efforts needed to enter a focusing space.',imgPath:'/cabbage/apple.png' },
+    description:'Decrease the efforts needed to enter a focusing space.',
+    vidPath:'/cabbage/Walkthrough/4_Focus timer_2021_V3.mov' },
 ];
 
 
@@ -76,7 +80,13 @@ export const cabbage_research_interview_1 = [
 
         // --research | competitive analysis chart -- //
    export const cabbage_research_compAnalysis_1 = [
+    { th:'', 
+      td1:'Serene',
+      td2:'Focus To-do',
+      td3:'Flipd',
+      td4:'Forest',
     
+    },
     { th:'Timer', 
       td1:'✅',
       td2:'✅',

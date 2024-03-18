@@ -1,4 +1,5 @@
 import React from "react";
+import ReactPlayer from 'react-player'
 
 
 export default function MainLeft(props) {
@@ -17,14 +18,14 @@ export default function MainLeft(props) {
             <div className="
                     flex
                     flex-col
-                    w-6/12
-                    pr-5
+                    w-7/12
+                    pr-10
                     font-sans
                     text-zinc-50
                     text-left
                     justify-center">
                     <p className="
-                        text-sm
+                        text-base
                         opacity-80
                         font-mono
                         uppercase
@@ -44,8 +45,21 @@ export default function MainLeft(props) {
                         {props.description}
                     </p>
             </div>
-            <div className="w-6/12 rounded-2xl overflow-hidden brightness-100">
+            <div className="w-5/12 rounded-3xl overflow-hidden brightness-100">
                 <img src={props.imgPath} alt={props.altText}/>
+                <ReactPlayer
+                    className="react-player aspect-auto  "
+                    url= {props.vidPath}
+                    width='100%'
+                    height='100%'
+                    controls = {true}
+                    volume= '0'
+                    muted={true}
+                    playing={true}
+                    loop={true}
+
+
+                    />
             </div>
         </div>
     );

@@ -7,7 +7,7 @@ export default function TableData(props) {
     
     return (
         <tr className=" divide-y divide-y-reverse">
-                <th className="w-3/12 pointer text-zinc-50 px-10 bg-fuchsia-600"
+                <th className="w-3/12 pointer text-zinc-50 px-8 bg-fuchsia-600"
                 >
                     {props.th}
                 </th>

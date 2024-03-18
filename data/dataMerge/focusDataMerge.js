@@ -65,11 +65,11 @@ function Cabbage_solution_2_merge() {
   const cabbageSolution = cabbage_solution_2.map( (i, index) =>{
     if(index%2===0){
       return (
-        <MainLeft caption={i.caption} title={i.title} description={i.description} imgPath={i.imgPath}/>
+        <MainLeft caption={i.caption} title={i.title} description={i.description} imgPath={i.imgPath} vidPath={i.vidPath}/>
         );
     }else{
       return (
-        <MainRight caption={i.caption} title={i.title} description={i.description} imgPath={i.imgPath}/>
+        <MainRight caption={i.caption} title={i.title} description={i.description} imgPath={i.imgPath} vidPath={i.vidPath}/>
         );
     }
   }
@@ -178,13 +178,14 @@ export {Cabbage_research_compAnalysis_0_merge}
 // }
 // export {Cabbage_research_compAnalysis_1_merge}
 
+
+// Competitor analysis
 function Cabbage_research_compAnalysis_1_merge() {
 
   const cabbageResearch = cabbage_research_compAnalysis_1.map((i, index) =>
   <TableRow th={i.th} mid={i.mid} index={index}
             td1={i.td1} td2={i.td2} td3={i.td3} td4={i.td4}
             
-         
   />
   );
   return (  
@@ -193,7 +194,7 @@ function Cabbage_research_compAnalysis_1_merge() {
 }
 export {Cabbage_research_compAnalysis_1_merge}
 
-
+// Key pain points
 function Cabbage_research_keyPainPoints_merge() {
 
   const cabbagePP = cabbage_research_keyPainPoints.map((i, index) =>
