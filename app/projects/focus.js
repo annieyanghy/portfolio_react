@@ -1,4 +1,5 @@
 import React from "react";
+
 import '../globals.css';
 import styles from './styles.module.css';
 
@@ -11,6 +12,8 @@ import {
   Cabbage_research_interview_0_merge, Cabbage_research_interview_1_merge,  Cabbage_research_interview_2_merge,
   Cabbage_research_compAnalysis_0_merge, Cabbage_research_compAnalysis_1_merge,
   Cabbage_research_keyPainPoints_merge,
+  Cabbage_design_1_merge, Cabbage_design_requirement_merge, Cabbage_design_intervention_diagram_merge
+  
 } from "../../data/dataMerge/focusDataMerge";
 import MainLeft from "@/components/blocks/main_left";
 import MainRight from "@/components/blocks/main_right";
@@ -26,6 +29,7 @@ import {
   ParallaxBannerLayer,
 } from "react-scroll-parallax";
 import { cabbage_research_keyPainPoints } from "@/data/focusRawData";
+import MainImg from "@/components/blocks/main_img";
 console.log(cabbage_research_keyPainPoints)
 
 
@@ -95,16 +99,9 @@ export default function Focus() {
 
                 <TitleStatement title="Competitive analysis" />
                 <Col_2 title="" component={Cabbage_research_compAnalysis_0_merge()} titleBgColor="" />
-
-                <tr className=" w-max " >
-                  <th className=" w-3/12 text-zinc-50 px-10 "></th>
-                  <th className=" text-zinc-50 px-14git text-xl align-middle">Serene</th>
-                  <th className=" text-zinc-50 px-14git text-xl align-middle">Focus To-do</th>
-                  <th className=" text-zinc-50 px-14git text-xl align-middle">Flipd</th>
-                  <th className=" text-zinc-50 px-14git text-xl align-middle">Forest</th>
-                </tr>
-                <Table >{Cabbage_research_compAnalysis_1_merge()}</Table>
-                
+                <div className=" w-full justify-items-center ">
+                  <Table >{Cabbage_research_compAnalysis_1_merge()}</Table>
+                </div>
             </div>
 
             <div className="relative my-10 py-8 px-14  w-8/12 justify-center rounded-3xl bg-fuchsia-700">
@@ -120,9 +117,35 @@ export default function Focus() {
 
 
         <div className="flex flex-col relative mt-10 w-full items-center justify-center  ">
-            {/* Ideate */}
+            {/* Design */}
+           <Cabbage_design_1_merge />
             
-            
+            <div className="relative my-10 py-8 px-14  w-8/12 justify-center rounded-3xl bg-slate-800">
+
+            <TitleStatement title="Design requirement" />
+            <Table >{Cabbage_design_requirement_merge()}</Table>
+
+            </div>
+
+            <div className="relative my-10 py-8 px-14  w-8/12 justify-center rounded-3xl bg-indigo-900">
+
+              <TitleStatement title="Ideation" />
+              <Cabbage_design_intervention_diagram_merge />
+              <MainImg imgPath="/cabbage/Brainstorming.jpeg" title="Brainstorming" />
+              <MainImg imgPath="/cabbage/Sketch.png" title="Sketches" />
+
+            </div>
+
+            <div className="relative my-10 py-8 px-14  w-8/12 justify-center rounded-3xl bg-indigo-900">
+
+              <TitleStatement title="Iteration" />
+              <MainImg imgPath="/cabbage/Lo-fi/lofi_Events.gif" title="Lo-fi prototype" />
+
+              <MainImg imgPath="/cabbage/UserValidation.png" title="User validation" />
+              <MainImg imgPath="/cabbage/Mid-fi_wireframe.png" title="Mid-fi wireframe" />
+
+
+              </div>
         </div>
 
       

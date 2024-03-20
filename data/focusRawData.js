@@ -31,13 +31,17 @@ export const cabbage_solution_1 = [
 
 export const cabbage_solution_2 = [
   { caption:'1', title: 'Turn calendar events into a focus timer to easily stick to the schedule', 
-    description:'Integrate existing goals and resources: Google Calendar or Microsoft Outlook. Making stick-to-a-goal easier',imgPath:'/cabbage/apple.png' },
+    description:'Integrate existing goals and resources: Google Calendar or Microsoft Outlook. Making stick-to-a-goal easier',
+    vidPath:'/cabbage/Walkthrough/1_Turn calendar to focus event_2021_V3.mov' },
   { caption:'2', title: 'Break difficult tasks into smaller tasks', 
-    description:'Small wins and short-term goals are more attainable than bigger goals.', imgPath:'/cabbage/apple.png'},
+    description:'Small wins and short-term goals are more attainable than bigger goals.', 
+    vidPath:'/cabbage/Walkthrough/2_Task breaker_2021_V3.mov'},
   { caption:'3', title: 'Create a calendar event with focus timer', 
-    description:'Making the better choice more cognitively available by setting focus timer as a default.',imgPath:'/cabbage/apple.png' },
+    description:'Making the better choice more cognitively available by setting focus timer as a default.',
+    vidPath:'/cabbage/Walkthrough/3_Create event_2021_V3.mov' },
     { caption:'4', title: 'Start a focus timer any time and block the phone', 
-    description:'Decrease the efforts needed to enter a focusing space.',imgPath:'/cabbage/apple.png' },
+    description:'Decrease the efforts needed to enter a focusing space.',
+    vidPath:'/cabbage/Walkthrough/4_Focus timer_2021_V3.mov' },
 ];
 
 
@@ -76,7 +80,13 @@ export const cabbage_research_interview_1 = [
 
         // --research | competitive analysis chart -- //
    export const cabbage_research_compAnalysis_1 = [
+    { th:'', 
+      td1:'Serene',
+      td2:'Focus To-do',
+      td3:'Flipd',
+      td4:'Forest',
     
+    },
     { th:'Timer', 
       td1:'✅',
       td2:'✅',
@@ -136,18 +146,56 @@ export const cabbage_research_interview_1 = [
   ];
 
 
-         // --research insights | key pain points -- //
-  export const cabbage_research_keyPainPoints = [
-    { th:'1. Plan & schedule', mid:'😰', td:'When tasks are overwhelming, participants feel paralyzed to even start planning'},
-    { th:'2. Happen soon', mid:'📈', td:'Participants’ emotion and focus state fluctuate drastically right before a scheduled task happens'},
-    { th:'3. Happening', mid:'🥱', td:'If it’s not interesting to participants, they are easily distracted by external factors'},
-  ];
+        // --research insights | key pain points -- //
+export const cabbage_research_keyPainPoints = [
+  { th:'1. Plan & schedule', mid:'😰', td1:'When tasks are overwhelming, participants feel paralyzed to even start planning'},
+  { th:'2. Happen soon', mid:'📈', td1:'Participants’ emotion and focus state fluctuate drastically right before a scheduled task happens'},
+  { th:'3. Happening', mid:'🥱', td1:'If it’s not interesting to participants, they are easily distracted by external factors'},
+];
 
 
 
-// export const cabbage_data_research_1 = [
-//   { icon:'sentiment_dissatisfied', caption:'', title: 'Emotion', description:'user find them unfocused when they are agitated', id: 1 },
-//   { icon:'sentiment_satisfied', caption:'', title: 'Emotion', description:'user find them unfocused when they are agitated', id: 2 },
-//   { icon:'sentiment_dissatisfied', caption:'', title: 'Emotion', description:'user find them unfocused when they are agitated', id: 3 },
-// ];
+// Design //
 
+// --Design | Design title -- //
+
+export const cabbage_design_1 = [
+  { caption:'Design', 
+    title:'Based on key pain points, I created three design principles that prioritize user focus throughout their experience' },
+];
+
+
+  // --Design | Design requirement -- //
+  export const cabbage_design_requirement = [
+
+  { th:'', mid:'', 
+  td1:'😰 Pain points',
+  mid2:'',
+  td2:'✨ Design requirements'
+  },
+  { th:'1. Plan & schedule', mid:'', 
+  td1:'Tasks are overwhelming, feel paralyzed',
+  mid2:'➡️',
+  td2:'Design needs to guide users through a step-by-step process to prepare for and break down difficult tasks'
+},
+  
+  { th:'2. Happen soon', mid:'', 
+  td1:'Tmotion and focus state fluctuate drastically',
+  mid2:'➡️',
+  td2:'Design needs to bridge the gap between digital calendar and focus mode'
+},
+  
+  { th:'3. Happening', mid:'', 
+  td1:'Easily distracted by external factors',
+  mid2:'➡️',
+  td2:'Design needs to sustain their focus span as long as possible',
+},
+];
+
+
+export const cabbage_intervention_diagram = [
+  { caption:'', title: 'Intervention diagram', 
+    description:'',
+    imgPath:'/cabbage/intervention_diagram.png' },
+  
+];

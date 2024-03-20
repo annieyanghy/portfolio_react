@@ -4,7 +4,8 @@ import {
   cabbage_research_1, 
   cabbage_research_interview_0, cabbage_research_interview_1,cabbage_research_interview_2,
   cabbage_research_compAnalysis_0, cabbage_research_compAnalysis_1,
-  cabbage_research_keyPainPoints
+  cabbage_research_keyPainPoints,
+  cabbage_design_1, cabbage_design_requirement, cabbage_intervention_diagram
   
   } from "../focusRawData";
 import Insight_col from "@/components/blocks/Insight_col";
@@ -14,6 +15,7 @@ import MainRight from "@/components/blocks/main_right";
 import TableRow from "@/components/blocks/table/tableRow";
 
 import TableData from "@/components/blocks/table/tableData";
+import MainImg from "@/components/blocks/main_img";
 // import Table from "@/components/blocks/table/tableBody";
 
 
@@ -65,11 +67,11 @@ function Cabbage_solution_2_merge() {
   const cabbageSolution = cabbage_solution_2.map( (i, index) =>{
     if(index%2===0){
       return (
-        <MainLeft caption={i.caption} title={i.title} description={i.description} imgPath={i.imgPath}/>
+        <MainLeft caption={i.caption} title={i.title} description={i.description} imgPath={i.imgPath} vidPath={i.vidPath}/>
         );
     }else{
       return (
-        <MainRight caption={i.caption} title={i.title} description={i.description} imgPath={i.imgPath}/>
+        <MainRight caption={i.caption} title={i.title} description={i.description} imgPath={i.imgPath} vidPath={i.vidPath}/>
         );
     }
   }
@@ -178,13 +180,14 @@ export {Cabbage_research_compAnalysis_0_merge}
 // }
 // export {Cabbage_research_compAnalysis_1_merge}
 
+
+// Competitor analysis
 function Cabbage_research_compAnalysis_1_merge() {
 
   const cabbageResearch = cabbage_research_compAnalysis_1.map((i, index) =>
   <TableRow th={i.th} mid={i.mid} index={index}
             td1={i.td1} td2={i.td2} td3={i.td3} td4={i.td4}
             
-         
   />
   );
   return (  
@@ -193,11 +196,11 @@ function Cabbage_research_compAnalysis_1_merge() {
 }
 export {Cabbage_research_compAnalysis_1_merge}
 
-
+// Key pain points
 function Cabbage_research_keyPainPoints_merge() {
 
   const cabbagePP = cabbage_research_keyPainPoints.map((i, index) =>
-  <TableData th={i.th} mid={i.mid} td={i.td}  index={index}
+  <TableData th={i.th} mid={i.mid} td1={i.td1}  index={index}
           
   />
   );
@@ -208,3 +211,48 @@ function Cabbage_research_keyPainPoints_merge() {
 export {Cabbage_research_keyPainPoints_merge}
 
 
+
+
+// Design
+
+// design title
+function Cabbage_design_1_merge() {
+
+  const cabbageDesign = cabbage_design_1.map(i =>
+    <TitleSection caption={i.caption} title={i.title} description={i.description}/>
+  );
+  return (
+    cabbageDesign
+  );
+}
+export {Cabbage_design_1_merge}
+
+
+// design requirement
+function Cabbage_design_requirement_merge() {
+
+  const cabbagePP = cabbage_design_requirement.map((i, index) =>
+  <TableData th={i.th} mid={i.mid} mid2={i.mid2} td1={i.td1} td2={i.td2} index={index}
+          
+  />
+  );
+  return (  
+    cabbagePP
+  );
+}
+export {Cabbage_design_requirement_merge}
+
+
+// intervention diagram
+function Cabbage_design_intervention_diagram_merge() {
+
+  const cabbagePP = cabbage_intervention_diagram.map((i, index) =>
+  <MainImg caption={i.caption} title={i.title} description={i.description} imgPath={i.imgPath}
+          
+  />
+  );
+  return (  
+    cabbagePP
+  );
+}
+export {Cabbage_design_intervention_diagram_merge}
