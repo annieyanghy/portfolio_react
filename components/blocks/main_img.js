@@ -3,7 +3,6 @@ import ReactPlayer from 'react-player'
 
 
 export default function MainImg(props) {
-    // image is at right
   
     return (
         <div className="flex 
@@ -41,7 +40,8 @@ export default function MainImg(props) {
                     <p className="
                         text-base
                         opacity-95
-                        mx-4">
+                        mx-4
+                        mb-2">
                         {props.description}
                     </p>
             </div>

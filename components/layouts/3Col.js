@@ -6,15 +6,13 @@ export default function Col_3(props) {
         <div 
             className="
                         relative flex flex-col max-w-5xl mx-auto 
-                        my-8
+                        my-8 
                         md:flex items-center justify-between"
         >
-
             <h4
                 className="
                             text-xl 
                             font-semibold
-
                             "
                 style={{backgroundColor:props.titleBgColor}}
             >
@@ -22,7 +20,7 @@ export default function Col_3(props) {
             </h4>
             <div
                 className="
-                        relative flex flex-row max-w-5xl mx-auto 
+                        relative flex flex-row max-w-5xl mx-auto items-stretch
                         md:flex items-center justify-between"
             >
                 {props.component}

@@ -5,7 +5,8 @@ import {
   cabbage_research_interview_0, cabbage_research_interview_1,cabbage_research_interview_2,
   cabbage_research_compAnalysis_0, cabbage_research_compAnalysis_1,
   cabbage_research_keyPainPoints,
-  cabbage_design_1, cabbage_design_requirement, cabbage_intervention_diagram
+  cabbage_design_1, cabbage_design_requirement, cabbage_intervention_diagram,
+  cabbage_future_ideas
   
   } from "../focusRawData";
 import Insight_col from "@/components/blocks/Insight_col";
@@ -256,3 +257,17 @@ function Cabbage_design_intervention_diagram_merge() {
   );
 }
 export {Cabbage_design_intervention_diagram_merge}
+
+
+
+// Testing & Future ideas
+function Cabbage_future_ideas_merge() {
+
+return (
+  cabbage_future_ideas.map(i =>
+    <Insight_col icon={i.icon} caption={i.caption} title={i.title} description={i.description} key={i.key}/>
+    )
+
+);
+}
+export {Cabbage_future_ideas_merge}

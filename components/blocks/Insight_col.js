@@ -34,7 +34,9 @@ export default function Insight_col(props) {
                 className="
                         text-2xl
                         mb-3
-                        font-semibold"
+                        font-semibold
+                        w-full
+                        "
             >
                 {props.title}
             </h5>

@@ -12,7 +12,8 @@ import {
   Cabbage_research_interview_0_merge, Cabbage_research_interview_1_merge,  Cabbage_research_interview_2_merge,
   Cabbage_research_compAnalysis_0_merge, Cabbage_research_compAnalysis_1_merge,
   Cabbage_research_keyPainPoints_merge,
-  Cabbage_design_1_merge, Cabbage_design_requirement_merge, Cabbage_design_intervention_diagram_merge
+  Cabbage_design_1_merge, Cabbage_design_requirement_merge, Cabbage_design_intervention_diagram_merge,
+  Cabbage_future_ideas_merge
   
 } from "../../data/dataMerge/focusDataMerge";
 import MainLeft from "@/components/blocks/main_left";
@@ -92,9 +93,11 @@ export default function Focus() {
 
                 <Col_3 title="Why focused?" component={Cabbage_research_interview_1_merge()} titleBgColor="rgb(99 102 241)" />
                 <Col_3 title="Why unfocused?" component={Cabbage_research_interview_2_merge()} titleBgColor="rgb(153 27 27)"/>
-            
+                
             </div>
-            
+            {/* <MainImg imgPath="/cabbage/Focus_User journey.png" title="User journey" 
+                  description=""/> */}
+
             <div className="relative my-10 py-8 px-14 w-8/12 justify-center rounded-3xl bg-indigo-900">
 
                 <TitleStatement title="Competitive analysis" />
@@ -110,15 +113,12 @@ export default function Focus() {
                 <Table>{Cabbage_research_keyPainPoints_merge()}</Table>
                 
                 
-
-                
             </div>
         </div>
 
-
+        {/* Design */}
         <div className="flex flex-col relative mt-10 w-full items-center justify-center  ">
-            {/* Design */}
-           <Cabbage_design_1_merge />
+          <Cabbage_design_1_merge />
             
             <div className="relative my-10 py-8 px-14  w-8/12 justify-center rounded-3xl bg-slate-800">
 
@@ -127,7 +127,7 @@ export default function Focus() {
 
             </div>
 
-            <div className="relative my-10 py-8 px-14  w-8/12 justify-center rounded-3xl bg-indigo-900">
+            <div className="relative my-10 py-8   w-8/12 justify-center rounded-3xl bg-slate-800/50">
 
               <TitleStatement title="Ideation" />
               <Cabbage_design_intervention_diagram_merge />
@@ -136,16 +136,39 @@ export default function Focus() {
 
             </div>
 
-            <div className="relative my-10 py-8 px-14  w-8/12 justify-center rounded-3xl bg-indigo-900">
+            <div className="relative my-10 py-8  w-8/12 justify-center rounded-3xl bg-slate-950/50">
 
-              <TitleStatement title="Iteration" />
-              <MainImg imgPath="/cabbage/Lo-fi/lofi_Events.gif" title="Lo-fi prototype" />
+              <TitleStatement title="Lo-fi to mid-fi iterations" />
+              <div className=" flex flex-row relative">
+                <MainImg imgPath="/cabbage/Lo-fi/lofi_Events.gif" title="Setting event" />
+                <MainImg imgPath="/cabbage/Lo-fi/lofi_Focus.gif" title="Focus timer" />
+                <MainImg imgPath="/cabbage/Lo-fi/lofi_Goals.gif" title="Goal setting" />
+                <MainImg imgPath="/cabbage/Lo-fi/lofi_Journey.gif" title="Stats" />
+              </div>
 
-              <MainImg imgPath="/cabbage/UserValidation.png" title="User validation" />
-              <MainImg imgPath="/cabbage/Mid-fi_wireframe.png" title="Mid-fi wireframe" />
 
+              <MainImg imgPath="/cabbage/UserValidation.png" title="User feedback on lo-fi mocks"
+              description="The design needs to strike a balance between flexible breaks and focus sessions."
+              />
+              <MainImg imgPath="/cabbage/Mid-fi_wireframe.png" title="Mid-fi wireframe" 
+              description="Users want more focus timer embedded in default calendar settings"
+              />
 
               </div>
+              <MainImg imgPath="/cabbage/hifi-bg.png" title="Final mocks" 
+              description=""
+              />
+          </div>
+
+          {/* testing & future */}
+        <div className="flex flex-col relative mt-10 pt-10 w-full items-center justify-center  bg-indigo-500">
+
+            <div className="relative my-10 py-8 px-14  w-8/12 justify-center rounded-3xl bg-indigo-700">
+              <TitleStatement title="Future ideas" />
+
+              <Col_3 title="Future ideas" component={Cabbage_future_ideas_merge()} titleBgColor="" />
+            </div>
+          
         </div>
 
       

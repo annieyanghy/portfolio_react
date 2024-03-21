@@ -199,3 +199,13 @@ export const cabbage_intervention_diagram = [
     imgPath:'/cabbage/intervention_diagram.png' },
   
 ];
+
+
+
+// Test & future ideas
+export const cabbage_future_ideas = [
+  { icon:'stadia_controller', caption:'', title: 'Gamification', description:'is helpful to retain users and motivate users to keep using the app', id: 1 },
+  { icon:'group', caption:'', title: 'Community', description:'users crave a community feature, seeking to benchmark their progress and connect with others', id: 2 },
+  { icon:'timer', caption:'', title: 'Customize timers', description:'in the task breaker allow users to optimize their workflow for each task', id: 3 },
+];
+
