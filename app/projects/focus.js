@@ -31,7 +31,10 @@ import {
 } from "react-scroll-parallax";
 import { cabbage_research_keyPainPoints } from "@/data/focusRawData";
 import MainImg from "@/components/blocks/main_img";
-console.log(cabbage_research_keyPainPoints)
+import { Chart } from "react-google-charts";
+import { taskSuccess_data, taskSuccess_options, useful_data, useful_options } from "./focus_charts";
+
+
 
 
 export default function Focus() {
@@ -165,8 +168,25 @@ export default function Focus() {
 
             <div className="relative my-10 py-8 px-14  w-8/12 justify-center rounded-3xl bg-indigo-700">
               <TitleStatement title="Future ideas" />
-
-              <Col_3 title="Future ideas" component={Cabbage_future_ideas_merge()} titleBgColor="" />
+                <Chart
+                  chartType="BarChart"
+                  data={taskSuccess_data}
+                  options={taskSuccess_options}
+                  width="100%"
+                  height="400px"
+                  
+                  legendToggle
+                />
+                <Chart
+                  chartType="BarChart"
+                  data={useful_data}
+                  options={useful_options}
+                  width="100%"
+                  height="400px"
+                  
+                  legendToggle
+                />
+              <Col_3 title="Future design needs" component={Cabbage_future_ideas_merge()} titleBgColor="" />
             </div>
           
         </div>
