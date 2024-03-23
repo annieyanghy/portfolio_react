@@ -1,8 +1,6 @@
 "use client"
 
-import { ProjectList } from "../../components/homeCard"
-import { Navigation } from "../../components/topnav"
-import { Footer } from "../../components/footer"
+import { ProjectList } from "../components/homeCard"
 import React from "react";
 
 

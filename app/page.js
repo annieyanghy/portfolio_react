@@ -4,8 +4,8 @@ import { Navigation } from "../components/topnav"
 import { Footer } from "../components/footer"
 import { Header} from "../components/header"
 import React from "react";
-import About from "./page/about";
-import Home from "./page/home"
+import About from "./about";
+import Home from "./home"
 import Garlic from "./projects/garlic";
 import Focus from "./projects/focus";
 import Apple from "./projects/apple";
