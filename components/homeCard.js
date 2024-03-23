@@ -1,11 +1,7 @@
 import React from "react";
-import { projects } from "../data/HomeProjectData.js";
-import { TEXT_DATA } from "../data/HomeProjectData.js";
-import { NavLink } from "react-router-dom";
+import Link from "next/link";
 
-console.log(projects);
-
-function HomeCard(props) {
+const HomeCard = (props) => {
   return (
     <div
       className="
@@ -49,10 +45,10 @@ function HomeCard(props) {
         {props.description}
       </p>
 
-        <img />
-        <NavLink to={props.path}>
-          <div
-            className="
+      <img />
+      <Link href={props.path}>
+        <div
+          className="
                           text-base
                           bg-slate-100
                           border-slate-800
@@ -64,29 +60,15 @@ function HomeCard(props) {
                           transition-transform
                           group-hover:translate-x-1 motion-reduce:transform-none
                           "
-          >
-            {/* <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none hover:outline-4 hover:outline-offset-4 hover:transition-all"> */}
-            {props.link}
-            {/* </span> */}
-          </div>
-        </NavLink>
+        >
+          {/* <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none hover:outline-4 hover:outline-offset-4 hover:transition-all"> */}
+          {props.link}
+          {/* </span> */}
+        </div>
+      </Link>
     </div>
   );
-}
+};
 
-var listItems;
-function ProjectList() {
-  const listItems = projects.map((projects) => (
-    <HomeCard
-      title={projects.title}
-      time={projects.time}
-      key={projects}
-      path={projects.path}
-      description={projects.description}
-      link={projects.link}
-    />
-  ));
-  return listItems;
-}
 
-export { ProjectList };
+export {HomeCard}
