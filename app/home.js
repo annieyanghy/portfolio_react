@@ -20,7 +20,7 @@ export default function Home() {
           </div>
         </div>
         
-        {/* <button className=" my-10 "><span class="material-symbols-rounded animate-bounce" style={{ fontSize: 40 }}>arrow_circle_down</span></button> */}
+        <button className=" my-10 "><span class="material-symbols-rounded animate-bounce" style={{ fontSize: 40 }}>arrow_circle_down</span></button>
       </div>
       <div className="
               relative flex flex-col flex-wrap md:flex-row  

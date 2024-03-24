@@ -67,15 +67,16 @@ export default function Focus() {
       
       
         {/* project process overview */}
-        <div className="flex flex-col relative mt-10 pt-10 w-full items-center justify-center  bg-slate-700">
-          <div className="flex flex-col md:flex-row md:flex-auto">
+          
+          <div className="flex flex-col mx-auto w-full max-w-5xl 
+                          justify-center items-center md:flex-wrap md:flex-row ">
+            
             <Cabbage_project_process_merge />
           </div>
-        </div>
 
 
         {/* problem */}
-        <div className="relative mt-10">
+        <div id="Intro" className="relative mt-10" >
 
           <Cabbage_problem_1_merge />
           <Col_3 component={Cabbage_problem_2_merge()} />
@@ -94,7 +95,7 @@ export default function Focus() {
 
         
         {/* research */}
-        <div className="flex flex-col relative mt-10 pt-10 w-full items-center justify-center  bg-indigo-500">
+        <div id="Understand" className="flex flex-col relative mt-10 pt-10 w-full items-center justify-center  bg-indigo-500">
 
           <Cabbage_research_1_merge />
 
@@ -138,7 +139,7 @@ export default function Focus() {
         </div>
 
         {/* Design */}
-        <div className="flex flex-col relative mt-10 w-full items-center justify-center  ">
+        <div id="Design" className="flex flex-col relative mt-10 w-full items-center justify-center  ">
           <Cabbage_design_1_merge />
 
           <div className="relative my-10 py-8 px-14  md:w-8/12 justify-center rounded-3xl bg-slate-800">
@@ -183,7 +184,7 @@ export default function Focus() {
         </div>
 
         {/* testing & future */}
-        <div className="flex flex-col relative mt-10 pt-10 w-full items-center justify-center  bg-indigo-500">
+        <div id="Testing" className="flex flex-col relative mt-10 pt-10 w-full items-center justify-center  bg-indigo-500">
           <Cabbage_testing_1_merge />
 
           <div className="relative my-10 py-8 px-14  md:w-8/12 justify-center rounded-3xl bg-indigo-700">

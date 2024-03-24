@@ -8,30 +8,32 @@
 export const cabbage_projectSteps_Focus = [
   {
     title: 'Intro',
+    icon:'✨',
     description: ["Problem", "Solution"],
   },
   {
     title: 'Understand',
-    description: ["Foundational user interview",
+    icon:'💭',
+    description: ["User interview",
                   "Competitive analysis",
                   "User journey",
-                  "Key pain points"]
+                  "Pain points"]
   },
   {
     title: 'Design',
-    description: ["Design requirement",
-      "Ideation",
-      "Lo-fi prototype",
-      "User feedback",
-      "Mid-fi prototype",
-      "Final mocks"
-    ],
+    icon:'🧪',
+    description: ["Design requirements",
+                  "Lo-fi & mid-fi",
+                  "User feedback",
+                  "Prototypes"
+                ],
   },
   {
     title: 'Testing',
+    icon:'🎨',
     description: ["Unmoderated testing",
-      "Future design ideas",
-    ]
+                  "Future design ideas",
+                ]
   },
 
 ];
