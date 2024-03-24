@@ -6,8 +6,7 @@ export default function Col_2(props) {
         <div 
             className="
                         flex flex-col relative w-full max-w-5xl mx-auto 
-                        my-16
-                        md:flex items-center justify-between"
+                        my-16 items-center justify-between"
         >
 
             <h4
@@ -22,8 +21,8 @@ export default function Col_2(props) {
             </h4>
             <div
                 className="
-                        relative flex flex-row w-full max-w-5xl mx-auto 
-                        md:flex items-center justify-between"
+                        relative flex flex-col w-full max-w-5xl mx-auto 
+                         items-center justify-between md:flex-row "
             >
 
                 {props.component}

@@ -1,6 +1,6 @@
 "use client"
 import './globals.css'
-import { Navigation } from "../components/topnav"
+import { Navigation } from "../components/navigation"
 import { Footer } from "../components/footer"
 import { Header} from "../components/header"
 import React from "react";

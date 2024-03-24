@@ -1,13 +1,14 @@
 import React from "react";
 
-export default function Insight_col(props) {
+export default function ProcessCard(props) {
     return (
         <div
             className="
                     bg-slate-800
-                    p-10
+                    p-4
                     m-5
                     w-screen
+                    basis-1/4
                     md:w-full
                     font-sans
                     rounded-2xl
@@ -16,10 +17,10 @@ export default function Insight_col(props) {
                     justify-center
                     "
         >
-            <span class="material-symbols-rounded" style={{ fontSize: 40 }}>
+            <span class="material-symbols-rounded" style={{ fontSize: 12 }}>
                 {props.icon}
             </span>
-            <p
+            {/* <p
                 className="
                         text-sm
                         opacity-80
@@ -28,26 +29,29 @@ export default function Insight_col(props) {
                         my-2"
             >
                 {props.caption}
-            </p>
+            </p> */}
 
-            <h5
+            <h6
                 className="
-                        text-2xl
+                        text-lg
                         mb-3
                         font-semibold
                         w-full
                         "
             >
                 {props.title}
-            </h5>
-            <p
-                className="
-                        text-sm
-                        opacity-80
-                        h-12"
-            >
-                {props.description}
-            </p>
+            </h6>
+
+            {props.description?.map((i) => (
+                <p className="
+                        text-md
+                        text-zinc-200
+                       
+                        ">
+                    {i}
+                </p>
+            ))}
+
 
         </div>
     );

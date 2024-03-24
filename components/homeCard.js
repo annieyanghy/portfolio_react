@@ -1,92 +1,137 @@
 import React from "react";
-import { projects } from "../data/HomeProjectData.js";
-import { TEXT_DATA } from "../data/HomeProjectData.js";
 import { NavLink } from "react-router-dom";
+import { Chips } from "./chips";
 
-console.log(projects);
 
-function HomeCard(props) {
+export function HomeCard(props) {
   return (
-    <div
-      className="
-                flex
-                flex-col
-                justify-between
-                bg-slate-800
-                p-10
-                m-5
-                w-full
-                font-sans
-                rounded-2xl
-                cursor-pointer
-                outline
-                outline-0
-                hover:outline-8 hover:outline-offset-4 hover:transition-all
-                "
-    >
-      <p
-        className="
-                text-sm
-                mb-2
-                opacity-80
-                font-mono"
-      >
-        {props.time}
-      </p>
-      <h2
-        className="
-                  text-3xl
-                  mb-3
-                  font-semibold"
-      >
-        {props.title}
-      </h2>
-      <p
-        className="
-            text-sm
-            opacity-90"
-      >
-        {props.description}
-      </p>
-
-        <img />
-        <NavLink to={props.path}>
+    <div className="   
+                  flex
+                  flex-col
+                  
+                  md:basis-1/2
+                  md:flex-auto">
+      <NavLink to={props.path}>
+        <div className="   
+                  group
+                  rounded-2xl
+                  m-4
+                  p-0
+                  bg-gradient-to-r from-cyan-300 to-rose-300
+                  
+                  hover:m-2
+                  hover:p-2
+                  hover:transition-all
+                  ">
           <div
             className="
-                          text-base
-                          bg-slate-100
-                          border-slate-800
-                          text-slate-800
-                          rounded-xl
-                          w-max
-                          p-2
-                          mt-8
-                          transition-transform
-                          group-hover:translate-x-1 motion-reduce:transform-none
-                          "
+                  flex
+                  flex-col
+                  w-full
+                  justify-between
+                  bg-slate-800
+                  rounded-2xl
+                  p-8
+                  font-sans
+                  cursor-pointer
+                
+                  "
           >
-            {/* <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none hover:outline-4 hover:outline-offset-4 hover:transition-all"> */}
-            {props.link}
-            {/* </span> */}
+            {/* outline
+                  outline-cyan-300
+                  outline-0
+                  hover:outline-4 hover:outline-offset-4 hover:transition-all */}
+            <p
+              className="
+                  text-sm
+                  mb-2
+                  opacity-80
+                  font-mono"
+            >
+              {props.time}
+            </p>
+            <div className="flex flex-col md:flex-row  items-center justify-between mb-3 
+                            bg-slate-700/80  rounded-xl  px-4       
+                            group-hover:bg-slate-950
+            ">
+              <h2
+                className="
+                    text-3xl
+                    font-semibold"
+              >
+                {props.title}
+              </h2>
+              <div
+                className="   group
+                            flex
+                            flex-row
+                            justify-center
+                            items-center
+                            text-base
+                            font-semibold
+                            text-zinc-100
+                            rounded-xl
+                            w-max
+                            px-2
+                            py-3
+                       
+                            "
+              >
+                <span class="material-symbols-rounded 
+                      inline-block transition-transform group-hover:translate-x-2 group-hover:-rotate-45 motion-reduce:transform-none"
+                  style={{ fontSize: 32 }}
+                >arrow_right_alt
+                </span>
+              </div>
+            </div>
+            <p
+              className="
+              text-base
+              opacity-90"
+            >
+              {props.description}
+            </p>
+
+            <img src={props.imgPath} alt={props.altText} />
+            {/* <div
+            className="   group
+                            flex
+                            flex-row
+                            justify-center
+                            items-center
+                            text-base
+                            font-semibold
+                            bg-slate-700/80
+                            text-zinc-100
+                            rounded-xl
+                            w-max
+                            px-4
+                            py-3
+                            mt-8
+                            hover:bg-slate-950
+                            "
+          > */}
+            {/* {props.link} */}
+
+            {/* <span class="material-symbols-rounded 
+                      inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none"
+                      style={{ fontSize: 32 }}
+            >arrow_right_alt
+            </span> */}
+            {/* </div> */}
+
+            <div className="my-2">
+              <Chips >
+
+                {props.chips}
+              </Chips>
+
+            </div>
           </div>
-        </NavLink>
+        </div>
+      </NavLink>
     </div>
   );
 }
 
-var listItems;
-function ProjectList() {
-  const listItems = projects.map((projects) => (
-    <HomeCard
-      title={projects.title}
-      time={projects.time}
-      key={projects}
-      path={projects.path}
-      description={projects.description}
-      link={projects.link}
-    />
-  ));
-  return listItems;
-}
 
-export { ProjectList };

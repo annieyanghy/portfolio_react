@@ -7,19 +7,27 @@ export default function MainLeft(props) {
   
     return (
         <div className="flex 
-                        flex-row
-                        w-full
+                        flex-col
+                        md:flex-row
+                        w-fit
                         bg-slate-800
-                        p-10
-                        m-5
+                        p-5
+                        md:p-10
+                        m-2
+                        md:m-5
                         rounded-2xl
-                        justify-between
+                        items-center
+                        md:justify-between
                         ">
             <div className="
                     flex
                     flex-col
-                    w-7/12
-                    pr-10
+                    md:w-7/12
+                    pr-0
+                    pb-10
+                    md:pb-2
+                    md:pr-10
+                    mx-auto
                     font-sans
                     text-zinc-50
                     text-left
@@ -45,7 +53,7 @@ export default function MainLeft(props) {
                         {props.description}
                     </p>
             </div>
-            <div className="w-5/12 rounded-2xl overflow-hidden brightness-100">
+            <div className="w-fit md:w-5/12 rounded-2xl overflow-hidden brightness-100">
                 <img src={props.imgPath} alt={props.altText}/>
                 <ReactPlayer
                     className="react-player aspect-auto  "

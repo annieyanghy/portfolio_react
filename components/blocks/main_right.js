@@ -1,67 +1,81 @@
 import React from "react";
-import ReactPlayer from 'react-player'
-
+import ReactPlayer from "react-player";
 
 export default function MainRight(props) {
     // image is at left
-  
+
     return (
-        <div className="flex 
-                        flex-row
-                        w-full
+        <div
+            className="flex 
+                        flex-col
+                        md:flex-row
+                        w-fit
                         bg-slate-800
-                        p-10
-                        m-5
+                        p-5
+                        md:p-10
+                        m-2
+                        md:m-5
                         rounded-2xl
-                        justify-between
-                        ">
-            <div className="w-5/12 rounded-2xl overflow-hidden brightness-100">
-                <img src={props.imgPath} alt={props.altText}/>
+                        items-center
+                        md:justify-between
+                        "
+        >
+            <div className="w-fit md:w-5/12 rounded-2xl overflow-hidden brightness-100">
+                <img src={props.imgPath} alt={props.altText} />
                 <ReactPlayer
                     className="react-player aspect-auto  "
-
-                    url= {props.vidPath}
-                    width='100%'
-                    height='100%'
-                    controls = {true}
-                    volume= '0'
+                    url={props.vidPath}
+                    width="100%"
+                    height="100%"
+                    controls={true}
+                    volume="0"
                     muted={true}
                     playing={true}
                     loop={true}
-                    />
+                />
             </div>
-            <div className="
-                    flex
+            <div
+                className="
+                     flex
                     flex-col
-                    w-7/12
+                    md:w-7/12
+                    pl-0
+                    pb-10
+                    md:pb-2
+                    md:pl-10
+                    mx-auto
                     font-sans
-                    pl-10
                     text-zinc-50
                     text-left
-                    justify-center">
-                    <p className="
+                    justify-center"
+            >
+                <p
+                    className="
                         text-base
                         opacity-80
                         font-mono
                         uppercase
-                        mb-4">
-                        {props.caption}
-                    </p>
+                        mb-4"
+                >
+                    {props.caption}
+                </p>
 
-                    <h1 className="
+                <h1
+                    className="
                         text-4xl
                         font-semibold
-                        mb-4">
-                        {props.title}
-                    </h1>
-                    <p className="
+                        mb-4"
+                >
+                    {props.title}
+                </h1>
+                <p
+                    className="
                         text-base
-                        opacity-95">
-                        {props.description}
-                    </p>
+                        opacity-95"
+                >
+                    {props.description}
+                </p>
             </div>
-           
         </div>
     );
-    
 }

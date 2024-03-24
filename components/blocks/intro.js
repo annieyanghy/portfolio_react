@@ -11,8 +11,11 @@ export default function Intro(props) {
                         flex-col
                         w-screen
                         py-10
+                        mx-auto
                         justify-between
+                        justify-items-center
                         bg-slate-800
+                        overflow-clip
                         "
             style={{ backgroundImage: props.imgPath,
                     backgroundRepeat: 'no-repeat',
@@ -34,9 +37,12 @@ export default function Intro(props) {
                 className="
                     flex 
                     flex-col
+                    w-screen
+                    md:w-full
                     font-sans
                     text-zinc-50
                     text-left
+                    mx-auto
                     justify-center
                     items-center"
             >
@@ -62,6 +68,7 @@ export default function Intro(props) {
                 </h1>
                 <h3
                     className="
+
                         text-xl
                         text-center
                         mb-12"
@@ -71,9 +78,11 @@ export default function Intro(props) {
             </div>
             <div className="
                     flex 
-                    flex-row
+                    flex-col
+                    md:flex-row
+                    items-center
                     justify-center
-                    space-x-10
+                    md:space-x-10
                     
                     ">
                 <p
@@ -98,7 +107,6 @@ export default function Intro(props) {
                     className="
                         text-base
                         opacity-80
-                       
                         "
                 >
                     {props.type}

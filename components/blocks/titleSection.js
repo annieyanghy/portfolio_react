@@ -5,6 +5,7 @@ export default function TitleSection(props) {
     
     return (
         <div className="flex 
+                        w-screen
                         my-8
                         mx-auto
                         max-w-5xl

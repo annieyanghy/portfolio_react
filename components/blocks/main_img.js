@@ -11,8 +11,13 @@ export default function MainImg(props) {
                         bg-slate-800
                         my-4
                         rounded-2xl
-                        justify-between
-                        ">
+                        justify-center
+                        justify-items-center
+
+                        "
+               
+                        >
+
             <div className="
                     flex
                     flex-col
@@ -45,7 +50,8 @@ export default function MainImg(props) {
                         {props.description}
                     </p>
             </div>
-            <div className="w-12/12 rounded-2xl overflow-hidden">
+            <div className="flex justify-items-center justify-self-center w-12/12 mx-auto rounded-2xl overflow-hidden "
+                    style={{backgroundColor:props.bgColor}}>
                 <img src={props.imgPath} alt={props.altText}/>
                 <ReactPlayer
                     className="aspect-auto  "

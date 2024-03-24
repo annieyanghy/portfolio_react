@@ -25,6 +25,7 @@ export default function TitleStatement(props) {
                     <h3 className="
                         text-3xl
                         font-normal
+                        mb-4
                         ">
                         {props.title}
                     </h3>

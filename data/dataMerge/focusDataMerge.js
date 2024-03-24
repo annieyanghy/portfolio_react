@@ -1,4 +1,5 @@
 import { 
+  cabbage_projectSteps_Focus,
   cabbage_problem_1,cabbage_problem_2, 
   cabbage_solution_1,cabbage_solution_2,
   cabbage_research_1, 
@@ -6,7 +7,7 @@ import {
   cabbage_research_compAnalysis_0, cabbage_research_compAnalysis_1,
   cabbage_research_keyPainPoints,
   cabbage_design_1, cabbage_design_requirement, cabbage_intervention_diagram,
-  cabbage_future_ideas
+  cabbage_testing_1, cabbage_future_ideas,
   
   } from "../focusRawData";
 import Insight_col from "@/components/blocks/Insight_col";
@@ -17,12 +18,25 @@ import TableRow from "@/components/blocks/table/tableRow";
 
 import TableData from "@/components/blocks/table/tableData";
 import MainImg from "@/components/blocks/main_img";
+import ProcessCard from "@/components/blocks/projectProcess";
 // import Table from "@/components/blocks/table/tableBody";
 
 
 // cabbage===focus project //
 // cabbage===focus project //
 // cabbage===focus project //
+
+
+// project process overview
+function Cabbage_project_process_merge() {
+  return (
+    cabbage_projectSteps_Focus.map((i, index) =>
+      <ProcessCard icon={i.icon} caption={i.caption} title={i.title} description={i.description} key={index}/>
+      )
+  
+  );
+  }
+  export {Cabbage_project_process_merge}
 
 
 
@@ -64,16 +78,23 @@ export {Cabbage_solution_1_merge}
 
 
 function Cabbage_solution_2_merge() {
-
   const cabbageSolution = cabbage_solution_2.map( (i, index) =>{
-    if(index%2===0){
+    console.log(innerWidth)
+    if(  window.innerWidth<=460 ){
       return (
         <MainLeft caption={i.caption} title={i.title} description={i.description} imgPath={i.imgPath} vidPath={i.vidPath}/>
+
         );
-    }else{
+    }else if ( window.innerWidth>460  ){
+      if(index%2===0){
+        return(
+          <MainLeft caption={i.caption} title={i.title} description={i.description} imgPath={i.imgPath} vidPath={i.vidPath}/>
+        );
+      }else{
       return (
         <MainRight caption={i.caption} title={i.title} description={i.description} imgPath={i.imgPath} vidPath={i.vidPath}/>
         );
+      }
     }
   }
   );
@@ -261,8 +282,21 @@ export {Cabbage_design_intervention_diagram_merge}
 
 
 // Testing & Future ideas
-function Cabbage_future_ideas_merge() {
 
+// testing title
+function Cabbage_testing_1_merge() {
+  return (
+  cabbage_testing_1.map(i =>
+    <TitleSection caption={i.caption} title={i.title} description={i.description}/>
+  )
+ 
+  );
+}
+export {Cabbage_testing_1_merge}
+
+// future design ideas
+
+function Cabbage_future_ideas_merge() {
 return (
   cabbage_future_ideas.map(i =>
     <Insight_col icon={i.icon} caption={i.caption} title={i.title} description={i.description} key={i.key}/>
