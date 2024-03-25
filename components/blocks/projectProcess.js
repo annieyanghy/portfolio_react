@@ -6,11 +6,11 @@ export default function ProcessCard(props) {
         <div
             className="
                     group 
-                    bg-slate-800
+                    bg-slate-700/80  
                     p-3
                     m-2
                     w-fit
-               
+                    h-48
                     justify-center
                     md:flex-auto
 
@@ -19,11 +19,9 @@ export default function ProcessCard(props) {
                     text-zinc-50
                     text-left
 
-                    outline
-                    outline-0
-                    outline-slate-200
+                    
                     hover:cursor-pointer
-                    hover:outline-1
+                    hover:bg-slate-900
                     ">
             <a  href={'#'+props.title} >
                 <div className="flex flex-row justify-between">

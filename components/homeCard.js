@@ -34,7 +34,7 @@ export function HomeCard(props) {
                   p-8
                   font-sans
                   cursor-pointer
-                
+                  group-hover:bg-slate-950
                   "
           >
             {/* outline
@@ -51,8 +51,8 @@ export function HomeCard(props) {
               {props.time}
             </p>
             <div className="flex flex-col md:flex-row  items-center justify-between mb-3 
-                            bg-slate-700/80  rounded-xl  px-4       
-                            group-hover:bg-slate-950
+                            rounded-xl  px-4       
+                           
             ">
               <h2
                 className="

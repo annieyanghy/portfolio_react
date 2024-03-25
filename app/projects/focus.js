@@ -69,7 +69,7 @@ export default function Focus() {
         {/* project process overview */}
           
           <div className="flex flex-col mx-auto w-full max-w-5xl 
-                          justify-center items-center md:flex-wrap md:flex-row ">
+                          items-start md:flex-wrap md:flex-row ">
             
             <Cabbage_project_process_merge />
           </div>
