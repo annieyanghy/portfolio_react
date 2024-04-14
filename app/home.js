@@ -9,14 +9,14 @@ import React from "react";
 
 export default function Home() {
   return (
-    <main className=" w-screen md:w-full md:max-w-5xl">
+    <main className=" w-screen md:w-full md:max-w-5xl ">
      
       <div className="flex flex-col items-center justify-center my-10 mx-4 md:mx-auto">
         <div className="flex flex-col space-y-10 "> 
           <h1 className="text-5xl">👋🏼 I design by understanding <del>users</del> people </h1>
           <div className="flex flex-col space-x-16 md:flex-row items-center justify-between">
-              <p className="text-lg text-zinc-300">I am Hsin-Yu – a systematic deep thinker,  journey-focused designer,  front-end coder, occasional illustrator</p>
-              <p className="text-lg text-zinc-300">🗽New York-based  🇹🇼 Taiwan-bred  🍵 Tea-infused</p>
+              <p className="text-lg text-zinc-300">I'm Hsin-Yu, a systematic deep thinker,  journey-focused designer,  front-end coder, occasional illustrator</p>
+              <p className="text-lg text-zinc-300">🗽🇹🇼 New York-based Taiwanese tea lover</p>
           </div>
         </div>
         
@@ -26,12 +26,18 @@ export default function Home() {
               relative flex flex-col flex-wrap md:flex-row  
               w-screen md:w-full 
               justify-center 
+              
               before:absolute 
-              bg-gradient-to-r from-cyan-500 to-blue-400
+             
+              bg-gradient-to-r from-cyan-500 to-blue-300
               rounded-2xl
               
               ">
         <ProjectList  />
+        {/* bg-gradient-to-r from-cyan-500 to-indigo-400 */}
+        {/* bg-gradient-to-r from-rose-400 to-blue-300 */}
+
+
         
     
       </div>

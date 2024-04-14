@@ -18,10 +18,10 @@ export function Chips(props) {
             {props.children?.map((i) => (
                 <p className="
                     border
-                    p-2
+                    p-1.5
                     rounded-xl
-                    mx-2
-                    my-2
+                    mx-1
+                    my-1
                     bg-slate-700
                     ">
                     {i}

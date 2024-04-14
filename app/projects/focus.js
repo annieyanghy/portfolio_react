@@ -55,9 +55,10 @@ export default function Focus() {
         <Intro
           title="Focus Calendar"
           time="2020"
-          role="solo product designer"
+          role="Solo product designer"
+          type="Passion project"
           description="Using behavioral economics to nudge people to to get things done"
-          type="passion project"
+         
           height="100%"
         />
         {/* <Intro 
@@ -69,14 +70,16 @@ export default function Focus() {
         {/* project process overview */}
           
           <div className="flex flex-col mx-auto w-full max-w-5xl 
-                          items-start md:flex-wrap md:flex-row ">
+                          justify-center gap-x-4
+                          my-8
+                            md:flex-row ">
             
             <Cabbage_project_process_merge />
           </div>
 
 
         {/* problem */}
-        <div id="Intro" className="relative mt-10" >
+        <div id="Intro" className=" flex flex-col relative mt-10 pt-10 w-full items-center justify-center  bg-indigo-500" >
 
           <Cabbage_problem_1_merge />
           <Col_3 component={Cabbage_problem_2_merge()} />

@@ -290,7 +290,7 @@ export const cabbage_intervention_diagram = [
 export const cabbage_testing_1 = [
   {
     caption: 'Testing & future ideas',
-    title: "Major user tasks have 80% to 100% success rate"
+    title: "Major tasks: 80% to 100% success rate"
   },
 ];
 export const cabbage_future_ideas = [

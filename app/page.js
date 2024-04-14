@@ -18,7 +18,9 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 export default function Index() {
   return (
     <ParallaxProvider>
-    <main className="flex min-h-screen flex-col items-center justify p-24 bg-neutral-900">
+     
+    <main className="flex min-h-screen flex-col items-center justify p-24   bg-neutral-900 
+     ">
    
         <div>
        

@@ -8,10 +8,12 @@ export default function ProcessCard(props) {
                     group 
                     bg-slate-700/80  
                     p-3
-                    m-2
+                   
                     w-full
+                    md:w-48
                     
-                    justify-center
+                    
+                  
                     md:flex-auto
 
                     font-sans
@@ -26,15 +28,15 @@ export default function ProcessCard(props) {
             
                 <div className="flex flex-row justify-between">
                     <div className="flex flex-row items-ceter space-x-2">
-                        <span class="material-symbols-rounded" style={{ fontSize: 20 }}>
+                        <span class="material-symbols-rounded" style={{ fontSize: 16 }}>
                             {props.icon}
                         </span>
                         <h6
                             className="
-                                text-lg
+                                text-md
                                 mb-3
                                 font-semibold
-                                w-full
+                                w-fit
                                 "
                         >
                             {props.title}
@@ -44,7 +46,7 @@ export default function ProcessCard(props) {
                                 group-hover:animate-bounce
                                 group-hover:transition-all
                                 " 
-                        style={{ fontSize: 32 }}>
+                        style={{ fontSize: 24 }}>
                         chevron_right</span>
                 </div>
                 <div className="h-24">
@@ -52,6 +54,7 @@ export default function ProcessCard(props) {
                     <p className="
                         text-sm
                         text-zinc-100
+                        w-fit
                         ">
                         * {i}
                     </p>

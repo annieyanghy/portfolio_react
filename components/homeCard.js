@@ -41,26 +41,31 @@ export function HomeCard(props) {
                   outline-cyan-300
                   outline-0
                   hover:outline-4 hover:outline-offset-4 hover:transition-all */}
-            <p
-              className="
-                  text-sm
-                  mb-2
-                  opacity-80
-                  font-mono"
-            >
-              {props.time}
-            </p>
-            <div className="flex flex-col md:flex-row  items-center justify-between mb-3 
-                            rounded-xl  px-4       
+
+            <div className="flex flex-col md:flex-row  items-start justify-between mb-3 
                            
             ">
-              <h2
-                className="
-                    text-3xl
-                    font-semibold"
-              >
-                {props.title}
-              </h2>
+              <div className="flex flex-col  items-start justify-between
+                                 
+                           
+            ">
+                <p
+                  className="
+                      text-sm
+                      mb-1
+                      opacity-80
+                      font-mono"
+                >
+                  {props.time}
+                </p>
+                <h2
+                  className="
+                      text-3xl
+                      font-semibold"
+                >
+                  {props.title}
+                </h2>
+              </div>
               <div
                 className="   group
                             flex
@@ -72,21 +77,21 @@ export function HomeCard(props) {
                             text-zinc-100
                             rounded-xl
                             w-max
-                            px-2
-                            py-3
+                            
+                           
                        
                             "
               >
                 <span class="material-symbols-rounded 
                       inline-block transition-transform group-hover:translate-x-2 group-hover:-rotate-45 motion-reduce:transform-none"
-                  style={{ fontSize: 32 }}
+                  style={{ fontSize: 56 }}
                 >arrow_right_alt
                 </span>
               </div>
             </div>
             <p
               className="
-              text-base
+              text-sm
               opacity-90"
             >
               {props.description}
