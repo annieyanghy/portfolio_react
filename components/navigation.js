@@ -1,7 +1,8 @@
 "use client"
 import React from "react";
 import 'material-symbols';
-import { Link } from "react-router-dom";
+import Link from "next/link";
+
 
 
 export function Navigation (){
@@ -9,6 +10,7 @@ export function Navigation (){
     return(
   
             <div className="
+            
                     flex
                     justify-center
                     m-2
@@ -25,7 +27,7 @@ export function Navigation (){
                 hover:before:bg-rose-400
                 ">
                 
-                <Link className="p-3 " to="/" relative="path">Home</Link>
+                <Link className="p-3 " href="/" relative="path">Home</Link>
                     
                 </span>
                 <span className="relative transition-all w-min-content  
@@ -36,7 +38,7 @@ export function Navigation (){
                 hover:before:bg-rose-400
                 ">
                     
-                <Link className="p-3 "  to="/about" relative="path">About</Link>
+                <Link className="p-3 "  href="/about" relative="path">About</Link>
                 </span>
                 <span className="relative transition-all w-min-content  
                 before:absolute before:w-0 before:-bottom-2 before:right-0 

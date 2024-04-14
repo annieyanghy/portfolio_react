@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import Link from "next/link";
 import { Chips } from "./chips";
 
 
@@ -11,7 +11,7 @@ export function HomeCard(props) {
                   
                   md:basis-1/2
                   md:flex-auto">
-      <NavLink to={props.path}>
+      <Link href={props.path}>
         <div className="   
                   group
                   rounded-2xl
@@ -134,7 +134,7 @@ export function HomeCard(props) {
             </div>
           </div>
         </div>
-      </NavLink>
+      </Link>
     </div>
   );
 }

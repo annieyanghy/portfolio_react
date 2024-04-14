@@ -1,7 +1,9 @@
 
-import './globals.css'
-import { Inter } from 'next/font/google'
-
+import './globals.css';
+import { Inter } from 'next/font/google';
+import {Providers} from '@/app/providers';
+import { Footer } from "@/components/footer"
+import { Header} from "@/components/header"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +17,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Providers>
+          <main className="flex min-h-screen flex-col items-center justify p-24 bg-neutral-900">
+            <div>
+              <Header />
+              {children}
+              <div className="relative flex w-full max-w-5xl items-center justify-between mt-32 bottom-0  ">
+              <Footer />
+              </div>
+            </div>
+          </main>
+        </Providers>
+      </body>
     </html>
   )
 }

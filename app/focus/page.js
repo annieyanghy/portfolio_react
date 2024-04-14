@@ -1,7 +1,8 @@
+"use client"
 import React from "react";
 
-import '../globals.css';
-import styles from './styles.module.css';
+import '@/app/globals.css';
+
 
 import {
   Cabbage_project_process_merge,
@@ -33,7 +34,7 @@ import {
 import { cabbage_research_keyPainPoints } from "@/data/focusRawData";
 import MainImg from "@/components/blocks/main_img";
 import { Chart } from "react-google-charts";
-import { taskSuccess_data, taskSuccess_options, useful_data, useful_options } from "./focus_charts";
+import { taskSuccess_data, taskSuccess_options, useful_data, useful_options } from "@/app/focus_charts.js";
 
 
 
@@ -102,7 +103,7 @@ export default function Focus() {
 
           <Cabbage_research_1_merge />
 
-          <div className="relative my-10 py-8 px-14  md:w-8/12 justify-center rounded-3xl bg-indigo-700">
+          <div className="relative my-10 py-8 px-14  md:w-10/12 justify-center rounded-3xl bg-indigo-700">
 
             <TitleStatement title="Foundational user interview" />
             <Col_2 title="" component={Cabbage_research_interview_0_merge()} titleBgColor="" />
@@ -113,14 +114,14 @@ export default function Focus() {
           </div>
           {/* <MainImg imgPath="/cabbage/Focus_User journey.png" title="User journey" 
                   description=""/> */}
-          <div className="relative my-10  md:w-8/12 justify-center rounded-3xl bg-indigo-900">
+          <div className="relative my-10  md:w-10/12 justify-center rounded-3xl bg-indigo-900">
             <TitleStatement title="Journey mapping" />
             <MainImg imgPath="/cabbage/Focus_User journey.png"
               title="User Journey"
               bgColor='rgb(248, 250, 252)'
             />
           </div>
-          <div className="relative my-10 py-8 px-14 md:w-8/12 justify-center rounded-3xl bg-indigo-900">
+          <div className="relative my-10 py-8 px-14 md:w-10/12 justify-center rounded-3xl bg-indigo-900">
 
             <TitleStatement title="Competitive analysis" />
             <Col_2 title="" component={Cabbage_research_compAnalysis_0_merge()} titleBgColor="" />
@@ -130,7 +131,7 @@ export default function Focus() {
           </div>
 
 
-          <div className="relative my-10 py-8 px-14  md:w-8/12 justify-center rounded-3xl bg-fuchsia-700">
+          <div className="relative my-10 py-8 px-14  md:w-10/12 justify-center rounded-3xl bg-fuchsia-700">
             <div className=" w-full max-w-5xl justify-items-center mx-auto">
 
               <TitleStatement title="Key pain points" />
@@ -145,7 +146,7 @@ export default function Focus() {
         <div id="Design" className="flex flex-col relative mt-10 w-full items-center justify-center  ">
           <Cabbage_design_1_merge />
 
-          <div className="relative my-10 py-8 px-14  md:w-8/12 justify-center rounded-3xl bg-slate-800">
+          <div className="relative my-10 py-8 px-14  md:w-10/12 justify-center rounded-3xl bg-slate-800">
             <div className=" w-full max-w-5xl justify-items-center mx-auto">
 
               <TitleStatement title="Design requirement" />
@@ -153,7 +154,7 @@ export default function Focus() {
             </div>
           </div>
 
-          <div className="relative my-10 py-8   md:w-8/12 justify-center rounded-3xl bg-slate-800/50">
+          <div className="relative my-10 py-8   md:w-10/12 justify-center rounded-3xl bg-slate-800/50">
 
             <TitleStatement title="Ideation" />
             <Cabbage_design_intervention_diagram_merge />
@@ -162,7 +163,7 @@ export default function Focus() {
 
           </div>
 
-          <div className="relative my-10 py-8  md:w-8/12 justify-center rounded-3xl bg-slate-950/50">
+          <div className="relative my-10 py-8  md:w-10/12 justify-center rounded-3xl bg-slate-950/50">
 
             <TitleStatement title="Lo-fi to mid-fi iterations" />
             <div className=" flex flex-col relative  md:flex-row ">
@@ -190,7 +191,7 @@ export default function Focus() {
         <div id="Testing" className="flex flex-col relative mt-10 pt-10 w-full items-center justify-center  bg-indigo-500">
           <Cabbage_testing_1_merge />
 
-          <div className="relative my-10 py-8 px-14  md:w-8/12 justify-center rounded-3xl bg-indigo-700">
+          <div className="relative my-10 py-8 px-14  md:w-10/12 justify-center rounded-3xl bg-indigo-700">
             <TitleStatement title="Unmoderated testing"
               description="To validate my design hypotheses, I created an unmoderated test on UseBerry with 5 planned tasks. I recruited 10 participants to complete these tasks"
             />
