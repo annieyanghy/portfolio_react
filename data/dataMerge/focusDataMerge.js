@@ -79,23 +79,26 @@ export {Cabbage_solution_1_merge}
 
 function Cabbage_solution_2_merge() {
   const cabbageSolution = cabbage_solution_2.map( (i, index) =>{
-    
-    if(  window.innerWidth<=460 ){
-      return (
-        <MainLeft caption={i.caption} title={i.title} description={i.description} imgPath={i.imgPath} vidPath={i.vidPath}/>
-
-        );
-    }else if ( window.innerWidth>460  ){
-      if(index%2===0){
-        return(
+    if (typeof window !== 'undefined'){
+      if(  window.innerWidth<=460 ){
+        return (
           <MainLeft caption={i.caption} title={i.title} description={i.description} imgPath={i.imgPath} vidPath={i.vidPath}/>
-        );
-      }else{
-      return (
-        <MainRight caption={i.caption} title={i.title} description={i.description} imgPath={i.imgPath} vidPath={i.vidPath}/>
-        );
+  
+          );
+      }else if ( window.innerWidth>460  ){
+        if(index%2===0){
+          return(
+            <MainLeft caption={i.caption} title={i.title} description={i.description} imgPath={i.imgPath} vidPath={i.vidPath}/>
+          );
+        }else{
+        return (
+          <MainRight caption={i.caption} title={i.title} description={i.description} imgPath={i.imgPath} vidPath={i.vidPath}/>
+          );
+        }
       }
     }
+    
+    
   }
   );
   return(
