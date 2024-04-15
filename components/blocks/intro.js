@@ -1,5 +1,5 @@
 import React from "react";
-
+import config from "@/next.config";
 
 
 export default function Intro(props) {

@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from 'react-player'
-
+import config from "@/next.config";
 
 export default function MainImg(props) {
   
@@ -52,10 +52,10 @@ export default function MainImg(props) {
             </div>
             <div className="flex justify-items-center justify-self-center w-12/12 mx-auto rounded-2xl overflow-hidden "
                     style={{backgroundColor:props.bgColor}}>
-                <img src={props.imgPath} alt={props.altText}/>
+                <img src={`${config.basePath}${props.imgPath}`} alt={props.altText}/>
                 <ReactPlayer
                     className="aspect-auto  "
-                    url= {props.vidPath}
+                    url={`${config.basePath}${props.vidPath}`}
                     width='100%'
                     height='100%'
                     controls = {true}

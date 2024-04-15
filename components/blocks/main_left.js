@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from 'react-player'
-
+import config from "@/next.config";
 
 export default function MainLeft(props) {
     // image is at right
@@ -54,10 +54,10 @@ export default function MainLeft(props) {
                     </p>
             </div>
             <div className="w-fit md:w-5/12 rounded-2xl overflow-hidden brightness-100">
-                <img src={props.imgPath} alt={props.altText}/>
+                <img src={`${config.basePath}${props.imgPath}`} alt={props.altText}/>
                 <ReactPlayer
                     className="react-player aspect-auto  "
-                    url= {props.vidPath}
+                    url= {`${config.basePath}${props.vidPath}`}
                     width='100%'
                     height='100%'
                     controls = {true}

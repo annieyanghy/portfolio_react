@@ -35,7 +35,7 @@ import { cabbage_research_keyPainPoints } from "@/data/focusRawData";
 import MainImg from "@/components/blocks/main_img";
 import { Chart } from "react-google-charts";
 import { taskSuccess_data, taskSuccess_options, useful_data, useful_options } from "@/app/focus_charts.js";
-
+import config from "@/next.config";
 
 
 
@@ -48,7 +48,7 @@ export default function Focus() {
         {/* intro */}
         <ParallaxBanner style={{ aspectRatio: "2 / 1" }}>
           <ParallaxBannerLayer
-            image="/cabbage/Focus_hero_L.png"
+            image={`${config.basePath}/cabbage/Focus_hero_L.png`}
             speed={-10}
             style={{ backgroundPosition: "50% 10vh" }}
           />

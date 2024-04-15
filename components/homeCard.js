@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Chips } from "./chips";
-
+import config from "@/next.config";
 
 export function HomeCard(props) {
   return (
@@ -97,7 +97,7 @@ export function HomeCard(props) {
               {props.description}
             </p>
 
-            <img src={props.imgPath} alt={props.altText} />
+            <img src={`${config.basePath}${props.imgPath}`} alt={props.altText} />
             {/* <div
             className="   group
                             flex
