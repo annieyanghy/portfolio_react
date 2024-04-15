@@ -8,7 +8,7 @@ export default function About() {
       <div className="flex flex-col items-center justify-content my-20 ">
         <div> 
           <p className="text-5xl">Hello World </p>
-       
+          <Image src="/Sketch.png" width="240"/>
         </div>
         
       </div>
