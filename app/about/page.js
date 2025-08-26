@@ -18,6 +18,8 @@ export default function About() {
 
             </p>
             <p className="text-md text-zinc-300">🗽 New York-based tea lover from Taiwan🇹🇼</p>
+            <p className="text-md text-zinc-300 py-3">👋🏼 <a href="https://www.linkedin.com/in/hsinyuyang/">LinkedIn  </a><span class="material-symbols-rounded" style={{ fontSize: 14 }} >open_in_new</span></p>
+
 
         </div>
         
