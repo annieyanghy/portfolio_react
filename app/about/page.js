@@ -2,9 +2,9 @@ import React from "react";
 
 export default function About() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between py-5 px-20 bg-neutral-900  w-screen md:w-full md:max-w-5xl ">
+    <main className="flex min-h-full flex-col w-full max-w-5xl items-center justify-between bg-neutral-900 ">
    
-      <div className="flex flex-col items-center justify-content my-10 ">
+      <div className="flex flex-col items-center justify-content px-16 ">
         <div> 
           <p className="text-5xl mb-12">Hello</p>
           <p className="text-2xl mb-8">I’m an Interaction Designer at Google. I create savvy, scalable and efficient design that also promotes smooth user experience. My product is called My Ad Center, and it gives customers agency to tune the ads they see.</p>
