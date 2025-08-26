@@ -5,10 +5,10 @@ export const projects = [
     chips:["Product design", "User research", "UX", "Prototyping","Behavioral economics"]
    },
     
-    { title: 'Google My Ad Center', time:'2021',path:"/google", 
+    { title: 'Google My Ad Center', time:'2022-now',path:"/google", 
     imgPath:"/garlic/mac.webp",   
     link:"", description:"User agency over the ads they see",
-    chips:["UX design", "Accessibility"]
+    chips:["UX design", "Accessibility", "Cross-functional collab", "Influencing"]
   },
     
     // { title: 'Apple', time:'2022',path:"/apple", 

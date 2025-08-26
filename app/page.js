@@ -13,9 +13,12 @@ export default function Home() {
      
       <div className="flex flex-col items-center justify-center my-10 mx-4 md:mx-auto">
         <div className="flex flex-col space-y-10 "> 
-          <h1 className="text-5xl">👋🏼 I design by understanding <del>users</del> people </h1>
+          <h1 className="text-5xl  text-center">I design by understanding <del>users</del> people</h1>
+          <h2 className="text-2xl  text-center">I also find clarity among chaos 🌊</h2>
+          {/* <h2 className="text-2xl  text-center">And get things done ✨</h2> */}
+          
           <div className="flex flex-col  md: items-center justify-between">
-              <p className="text-lg text-zinc-300 text-center">I'm Hsin-Yu, a systematic deep thinker, journey-focused designer, front-end coder (for fun)</p>
+              <p className="text-lg text-zinc-300 text-center">👋🏼 I'm Hsin-Yu, a systematic deep thinker, journey-focused designer, front-end coder (for fun)</p>
               <p className="text-lg text-zinc-500 text-center">occasional illustrator and spontaneous writer, doing yoga in her Brooklyn hood</p>
           </div>
         </div>
