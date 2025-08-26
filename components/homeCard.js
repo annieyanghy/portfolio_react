@@ -28,6 +28,7 @@ export function HomeCard(props) {
                   flex
                   flex-col
                   w-full
+                  h-max
                   justify-between
                   bg-slate-800
                   rounded-2xl
@@ -35,6 +36,7 @@ export function HomeCard(props) {
                   font-sans
                   cursor-pointer
                   group-hover:bg-slate-950
+                  
                   "
           >
             {/* outline

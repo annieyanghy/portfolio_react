@@ -47,7 +47,7 @@ export function Navigation (){
                 hover:before:left-0 
                 hover:before:bg-rose-400
                 ">
-                    <a className="p-3 "  href="www.google.com" >Write <span class="material-symbols-rounded" style={{ fontSize: 14 }} >open_in_new</span></a>
+                    <a className="p-3 "  href="https://hsinyuyang.medium.com/" >Write <span class="material-symbols-rounded" style={{ fontSize: 14 }} >open_in_new</span></a>
                 </span>
                 
             </div>
