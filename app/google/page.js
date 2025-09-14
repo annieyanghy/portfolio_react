@@ -23,7 +23,8 @@ export default function Garlic() {
         <ul className="text-xl list-disc pl-6">
           <li>Ad history</li>
           <li>Suggested ad topics and ad brands</li>
-          <li>Empty page for users who turns off ad personalization</li>
+          <li>Empty page for users who turn off ad personalization</li>
+          <li>And many more to come</li>
         </ul>
         
       </div>

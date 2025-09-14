@@ -86,7 +86,7 @@ export function HomeCard(props) {
               >
                 <span class="material-symbols-rounded 
                       inline-block transition-transform group-hover:translate-x-2 group-hover:-rotate-45 motion-reduce:transform-none"
-                  style={{ fontSize: 56 }}
+                  style={{ fontSize: 48 }}
                 >arrow_right_alt
                 </span>
               </div>
@@ -94,7 +94,8 @@ export function HomeCard(props) {
             <p
               className="
               text-sm
-              opacity-90"
+              opacity-90
+              py-4"
             >
               {props.description}
             </p>
