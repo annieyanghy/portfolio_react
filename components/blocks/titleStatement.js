@@ -8,7 +8,7 @@ export default function TitleStatement(props) {
                         flex-row
                         p-8
                         pb-1
-                        my-5
+                        my-4
                         ">
             <div className="
                     w-full
@@ -17,20 +17,22 @@ export default function TitleStatement(props) {
                     text-center
                     justify-center">
                     <p className="
-                        text-sm
+                        text-sm/8
                         font-mono
                         opacity-80">
                         {props.caption}
                     </p>
                     <h3 className="
-                        text-3xl
-                        font-normal
-                        mb-4
+                        text-xl
+                        font-bold
+                        mb-2
+                        capitalize
+                        font-mono
                         ">
                         {props.title}
                     </h3>
                     <p className="
-                        text-base
+                        text-base/8
                         opacity-90">
                         {props.description}
                     </p>

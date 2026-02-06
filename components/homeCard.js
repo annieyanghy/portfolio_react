@@ -33,7 +33,6 @@ export function HomeCard(props) {
                   bg-slate-800
                   rounded-2xl
                   p-8
-                  font-sans
                   cursor-pointer
                   group-hover:bg-slate-950
                   
@@ -53,7 +52,8 @@ export function HomeCard(props) {
             ">
                 <p
                   className="
-                      text-sm
+                      text-sm/8
+                      
                       mb-1
                       opacity-80
                       font-mono"
@@ -93,7 +93,8 @@ export function HomeCard(props) {
             </div>
             <p
               className="
-              text-sm
+              text-sm/8
+              tracking-wide
               opacity-90
               py-4"
             >
@@ -128,7 +129,7 @@ export function HomeCard(props) {
             </span> */}
             {/* </div> */}
 
-            <div className="my-2">
+            <div className="my-2 font-mono">
               <Chips >
 
                 {props.chips}

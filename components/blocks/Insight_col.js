@@ -21,7 +21,7 @@ export default function Insight_col(props) {
             </span>
             <p
                 className="
-                        text-sm
+                        text-sm/8
                         opacity-80
                         font-mono
                         uppercase

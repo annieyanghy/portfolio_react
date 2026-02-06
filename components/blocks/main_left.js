@@ -4,7 +4,7 @@ import config from "@/next.config";
 
 export default function MainLeft(props) {
     // image is at right
-  
+
     return (
         <div className="flex 
                         flex-col
@@ -48,28 +48,37 @@ export default function MainLeft(props) {
                         {props.title}
                     </h1>
                     <p className="
-                        text-base
+                        text-base/7
+                        tracking-wide
                         opacity-95">
                         {props.description}
                     </p>
             </div>
-            <div className="w-fit md:w-5/12 rounded-2xl overflow-hidden brightness-100">
-                <img src={`${config.basePath}${props.imgPath}`} alt={props.altText}/>
+            <div className="w-fit md:w-9/12 rounded-2xl overflow-hidden brightness-100">
+              {props.imgPath === undefined ? (
                 <ReactPlayer
-                    className="react-player aspect-auto  "
-                    url= {`${config.basePath}${props.vidPath}`}
-                    width='100%'
-                    height='100%'
-                    controls = {true}
-                    volume= '0'
-                    muted={true}
-                    playing={true}
-                    loop={true}
+                        className="react-player aspect-auto  "
+                        url= {`${config.basePath}${props.vidPath}`}
+                        width='100%'
+                        height='100%'
+                        controls = {true}
+                        volume= '0'
+                        muted={true}
+                        playing={true}
+                        loop={true}
 
 
-                    />
+                        />
+              
+                    ):(
+                         <img src={`${config.basePath}${props.imgPath}`} alt={props.altText}/>
+                
+                )}
+                
             </div>
         </div>
+        
     );
+    
     
 }

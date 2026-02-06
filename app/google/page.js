@@ -1,4 +1,12 @@
+"use client"
+
 import React from "react";
+import MainImg from "@/components/blocks/main_img";
+import TitleStatement from "@/components/blocks/titleStatement";
+
+import {
+  Google_mac_demo_merge
+} from "../../data/dataMerge/googleDataMerge";
 
 
 export default function Garlic() {
@@ -6,7 +14,7 @@ export default function Garlic() {
     <main className="flex min-h-full flex-col w-full max-w-5xl items-center justify-between bg-neutral-900">
       <div className="flex flex-col items-center justify-content my-20 w-full">
         <div> 
-          <h1 className="text-5xl mb-12">Google - My Ad Center </h1>
+          <h1 className="text-5xl mb-12">Google My Ad Center </h1>
           <p className="text-xl mb-8"> <a className="underline underline-offset-4" href="https://myadcenter.google.com">myadcenter.google.com</a></p>
 
           <p className="text-xl mb-8">Check out <a className="underline underline-offset-4" href="https://blog.google/technology/safety-security/my-ad-center/">this article </a>for the product launch!</p>
@@ -20,12 +28,32 @@ export default function Garlic() {
         <h2 className="text-2xl mb-4">
         Other features I’ve designed since its launch:        
         </h2>
-        <ul className="text-xl list-disc pl-6">
+          <ul className="text-xl list-disc pl-6">
           <li>Ad history</li>
           <li>Suggested ad topics and ad brands</li>
           <li>Empty page for users who turn off ad personalization</li>
+            
           <li>And many more to come</li>
         </ul>
+         <div className="relative flex-col   justify-items-center justify-between">
+                {/* <Google_mac_demo_merge />   */}
+                <TitleStatement title="Edge cases design" />
+                
+                <MainImg imgPath="/garlic/gap off+suggested content.gif"
+                      title="GAP off and suggested content"
+                      bgColor='rgb(248, 250, 252)'
+                            />
+                 <MainImg imgPath="/garlic/ad history_sm.gif"
+                      title="Ad history"
+                      bgColor='rgb(248, 250, 252)'
+                            />
+                <MainImg imgPath="/garlic/ad history_responsive.gif"
+                      title="Responsive HTML ad thumbnail"
+                      bgColor='rgb(248, 250, 252)'
+                            />
+          </div>
+          
+    
         
       </div>
       </div>

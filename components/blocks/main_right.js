@@ -21,19 +21,25 @@ export default function MainRight(props) {
                         md:justify-between
                         "
         >
-            <div className="w-fit md:w-5/12 rounded-2xl overflow-hidden brightness-100">
-                <img src={`${config.basePath}${props.imgPath}`} alt={props.altText} />
-                <ReactPlayer
-                    className="react-player aspect-auto  "
-                    url={`${config.basePath}${props.vidPath}`}
-                    width="100%"
-                    height="100%"
-                    controls={true}
-                    volume="0"
-                    muted={true}
-                    playing={true}
-                    loop={true}
-                />
+            <div className="w-fit md:w-9/12 rounded-2xl overflow-hidden brightness-100">
+                  {props.imgPath === undefined ? (
+                    <ReactPlayer
+                            className="react-player aspect-auto  "
+                            url= {`${config.basePath}${props.vidPath}`}
+                            width='100%'
+                            height='100%'
+                            controls = {true}
+                            volume= '0'
+                            muted={true}
+                            playing={true}
+                            loop={true}
+
+                            />
+              
+                    ):(
+                        <img src={`${config.basePath}${props.imgPath}`} alt={props.altText}/>
+                        
+                            )}
             </div>
             <div
                 className="
@@ -71,7 +77,8 @@ export default function MainRight(props) {
                 </h1>
                 <p
                     className="
-                        text-base
+                        text-base/7
+                        tracking-wide
                         opacity-95"
                 >
                     {props.description}

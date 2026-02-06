@@ -26,10 +26,11 @@ export default function TitleSection(props) {
             
                     ">
                     <p className="
-                        text-base
+                        text-sm/6
                         font-mono
                         font-semibold
-                        p-4
+                        py-3
+                        px-4
                         rounded-full
                         bg-blue-950
                         opacity-80">
@@ -37,7 +38,7 @@ export default function TitleSection(props) {
                     </p>
                     <h2 className="
                         text-3xl
-                        font-semibold
+                        font-bold
                         p-2
                         my-5">
                         {props.title}

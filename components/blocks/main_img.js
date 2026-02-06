@@ -22,12 +22,13 @@ export default function MainImg(props) {
                     flex
                     flex-col
                     w-12/12
+                
                     font-sans
                     text-zinc-50
                     text-center
                     justify-center">
                     <p className="
-                        text-base
+                        text-base/8
                         opacity-80
                         font-mono
                         uppercase
@@ -36,14 +37,15 @@ export default function MainImg(props) {
                     </p>
 
                     <h1 className="
-                        text-xl
-                        font-medium
+                        text-md
+                        font-semibold
+                        pt-4
                         mx-4
                         my-2">
                         {props.title}
                     </h1>
                     <p className="
-                        text-base
+                        text-base/8
                         opacity-95
                         mx-4
                         mb-2">
@@ -52,7 +54,7 @@ export default function MainImg(props) {
             </div>
             <div className="flex justify-items-center justify-self-center w-12/12 mx-auto rounded-2xl overflow-hidden "
                     style={{backgroundColor:props.bgColor}}>
-                <img src={`${config.basePath}${props.imgPath}`} alt={props.altText}/>
+                          {props.imgPath === undefined ? (
                 <ReactPlayer
                     className="aspect-auto  "
                     url={`${config.basePath}${props.vidPath}`}
@@ -66,6 +68,10 @@ export default function MainImg(props) {
 
 
                     />
+                ):(                
+                          
+                <img src={`${config.basePath}${props.imgPath}`} alt={props.altText}/>
+                 ) }
             </div>
         </div>
     );
