@@ -9,7 +9,9 @@ export default function MainImg(props) {
                         flex-col
                         w-full
                         bg-slate-800
-                        my-4
+                        mt-5
+                        mb-10
+
                         rounded-2xl
                         justify-center
                         justify-items-center
@@ -22,8 +24,6 @@ export default function MainImg(props) {
                     flex
                     flex-col
                     w-12/12
-                
-                    font-sans
                     text-zinc-50
                     text-center
                     justify-center">
@@ -39,6 +39,7 @@ export default function MainImg(props) {
                     <h1 className="
                         text-md
                         font-semibold
+                        font-sans
                         pt-4
                         mx-4
                         my-2">

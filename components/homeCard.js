@@ -28,7 +28,7 @@ export function HomeCard(props) {
                   flex
                   flex-col
                   w-full
-                  h-max
+                  h-auto
                   justify-between
                   bg-slate-800
                   rounded-2xl
@@ -93,7 +93,7 @@ export function HomeCard(props) {
             </div>
             <p
               className="
-              text-sm/8
+              text-md/8
               tracking-wide
               opacity-90
               py-4"

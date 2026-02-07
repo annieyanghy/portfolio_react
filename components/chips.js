@@ -8,7 +8,7 @@ export function Chips(props) {
                   flex-row
                   flex-wrap
                   md:flex-auto
-                  text-xs
+                  text-sm
                   mb-2
                   opacity-80
                   font-mono
@@ -18,7 +18,8 @@ export function Chips(props) {
             {props.children?.map((i) => (
                 <p className="
                     border
-                    p-1.5
+                    px-2
+                    py-1
                     rounded-xl
                     mx-1
                     my-1

@@ -21,28 +21,34 @@ export default function Garlic() {
 
           <img className="w-full mb-8 rounded-3xl" src="garlic/mac.webp"></img>
 
-       <p className="text-2xl mb-12">Since launching the product at My Ad Center in 2022, I've been on a mission to continuously improve its features and accessibility. The core of my work has been centered on giving users more agency over their ads, ensuring they have the tools and control they need to manage their campaigns effectively. Every update, big or small, has been a step toward a more intuitive, powerful, and user-friendly platform, reflecting my commitment to a product that truly serves its users.
+       <p className="text-2xl mb-12">Since launching My Ad Center in 2022, I've been on a mission to continuously improve its features and accessibility. My core work is giving users more agency over their ads, ensuring they are empowered to tune their ads. Every update, big or small, has been a step toward a more intuitive, powerful, and user-friendly platform. 
+
 
         </p>
 
-        <h2 className="text-2xl mb-4">
-        Other features I’ve designed since its launch:        
-        </h2>
+       
           <ul className="text-xl list-disc pl-6">
-          <li>Ad history</li>
-          <li>Suggested ad topics and ad brands</li>
-          <li>Empty page for users who turn off ad personalization</li>
-            
-          <li>And many more to come</li>
-        </ul>
+          
+            <li>Trending ad topics and ad brands</li>
+            <li>Empty page for users who turn off ad personalization</li>
+            <li>Ad history</li>
+          </ul>
          <div className="relative flex-col   justify-items-center justify-between">
                 {/* <Google_mac_demo_merge />   */}
-                <TitleStatement title="Edge cases design" />
+                <TitleStatement title="Empty state" />
                 
-                <MainImg imgPath="/garlic/gap off+suggested content.gif"
-                      title="GAP off and suggested content"
+                <MainImg imgPath="/garlic/trending topics and brands.gif"
+                      title="Trending ad topics and brands"
                       bgColor='rgb(248, 250, 252)'
                             />
+                <MainImg imgPath="/garlic/gap off.gif"
+                      title="Empty page for ad personalization off"
+                      bgColor='rgb(248, 250, 252)'
+                    />
+
+
+                <TitleStatement title="Reviewing past ads" />
+
                  <MainImg imgPath="/garlic/ad history_sm.gif"
                       title="Ad history"
                       bgColor='rgb(248, 250, 252)'

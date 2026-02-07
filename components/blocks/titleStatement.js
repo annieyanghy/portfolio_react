@@ -6,9 +6,10 @@ export default function TitleStatement(props) {
     return (
         <div className="flex 
                         flex-row
-                        p-8
+                        mt-20
+                        pt-2
                         pb-1
-                        my-4
+                       
                         ">
             <div className="
                     w-full
@@ -25,9 +26,10 @@ export default function TitleStatement(props) {
                     <h3 className="
                         text-xl
                         font-bold
+                        font-mono
                         mb-2
                         capitalize
-                        font-mono
+                      
                         ">
                         {props.title}
                     </h3>

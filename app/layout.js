@@ -7,7 +7,11 @@ import { Header} from "@/components/header"
 
 
 
- const inter = Figtree({ subsets: ['latin'] })
+const figtree = Figtree({ 
+  subsets: ['latin'],
+  variable: '--font-figtree',
+
+})
 
 export const metadata = {
   title: 'hsinyuyang.com',
@@ -19,9 +23,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={figtree.className}>
      
-      <body className={inter.className}>
+      <body >
         <Providers>
 
           <main className="flex min-h-screen flex-col  items-center justify p-24 bg-neutral-900">
