@@ -28,7 +28,7 @@ export function HomeCard(props) {
                   flex
                   flex-col
                   w-full
-                  h-auto
+                  h-lh
                   justify-between
                   bg-slate-800
                   rounded-2xl
@@ -96,12 +96,18 @@ export function HomeCard(props) {
               text-md/8
               tracking-wide
               opacity-90
-              py-4"
+              h-20
+              
+              py-4
+              "
+              
             >
               {props.description}
             </p>
+              <div className="rounded-xl flex justify-center w-full h-56 overflow-hidden" >
+                <img className="w-full h-auto " src={`${config.basePath}${props.imgPath}`} alt={props.altText} />
 
-            <img src={`${config.basePath}${props.imgPath}`} alt={props.altText} />
+              </div>
             {/* <div
             className="   group
                             flex

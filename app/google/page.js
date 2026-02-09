@@ -27,12 +27,12 @@ export default function Garlic() {
         </p>
 
        
-          <ul className="text-xl list-disc pl-6">
+          {/* <ul className="text-xl list-disc pl-6">
           
             <li>Trending ad topics and ad brands</li>
             <li>Empty page for users who turn off ad personalization</li>
             <li>Ad history</li>
-          </ul>
+          </ul> */}
          <div className="relative flex-col   justify-items-center justify-between">
                 {/* <Google_mac_demo_merge />   */}
                 <TitleStatement title="Empty state" />
@@ -53,10 +53,25 @@ export default function Garlic() {
                       title="Ad history"
                       bgColor='rgb(248, 250, 252)'
                             />
+                  <MainImg imgPath="/garlic/like or block ad in ad history.gif"
+                      title="Like or block ads"
+                      bgColor='rgb(248, 250, 252)'
+                            />
                 <MainImg imgPath="/garlic/ad history_responsive.gif"
                       title="Responsive HTML ad thumbnail"
                       bgColor='rgb(248, 250, 252)'
                             />
+
+
+                 <TitleStatement title="Access My Ad Center through out Google products" />
+                 <MainImg imgPath="/garlic/panel_1.gif"
+                      title="My Ad Center Panel"
+                      bgColor='rgb(248, 250, 252)'
+                            />
+                  <MainImg imgPath="/garlic/panel_report flow.gif"
+                        title="Report ads when it's harmful"
+                        bgColor='rgb(248, 250, 252)'
+                              />
           </div>
           
     
